@@ -1,0 +1,1219 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="x-ua-compatible" content="ie=7"/>
+<title>易都</title>
+<link href="css/global.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="css/channels.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.soChange.js"></script>
+<script type="text/javascript" src="js/ScrollPic.js"></script>
+</head>
+<body class="ydb-bodybg">
+<div class="ydc-top yd-width">
+  <div class="ydc-left">您好，请<a href="#">[登录]</a> <a href="#">[会员注册]</a></div>
+  <div class="ydc-right">
+	<ul>
+		<li class="first"><a href="#">易都天下</a></li>	
+		<li><a href="#">我要买</a></li>
+		<li><a href="#">商家注册</a></li> 
+		<li><a href="#">我的易都</a></li> 
+		<li><a href="#">我的订单</a></li> 
+		<li class="gwc"><a href="#">购物车(0)</a></li>  
+		<li><a href="#">收藏夹</a></li> 
+		<li><a href="#">帮助中心</a></li>  
+		<li class="kf"><a href="#"> 在线客服</a></li>   
+		<li><a href="#">社区</a></li>
+		<li class="tel">热线电话：4008200573</li>
+	</ul>
+  </div>
+</div>
+
+<div class="ydc-nav">
+  <div class="ydc-navmain">
+    <div class="logo"><a href="#"><img src="ad/adb2_01.jpg" /></a></div>
+		<div class="soso">
+			<div class="spfl" id="ydcSerch">
+				<input name="" type="text" class="list" value="商品分类"/><s></s>
+				<div class="openser" id="ydcSerchBox">
+						<a href="javascript:void(0)" rel="nofollow">商品分类一</a>
+						<a href="javascript:void(0)" rel="nofollow">商品分类二</a>	
+						<a href="javascript:void(0)" rel="nofollow">商品分类三</a>											
+				</div>
+			</div>
+			<script type="text/javascript">
+				$("#ydcSerch s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					var offset = $(event.target).offset();//取消事件冒泡
+					$("#ydcSerchBox").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydcSerchBox").hide() });//单击空白区域隐藏
+				$("#ydcSerchBox a").click(function(event) { $("#ydcSerchBox").hide() });//单击弹出层则自身隐藏
+				$('#ydcSerchBox a').click(function(){
+					$("#ydcSerch").find("input").val($(this).html());
+					$(this).find('#ydcSerchBox').hide();
+				});
+			</script>	
+			<input name="" type="text" class="serch" value="请输入您需要的商品"/>
+			<a href="#" class="serchbtx">搜索</a>
+		</div>
+		<div class="ydc-navbot">
+			<ul>
+				<li><a href="#"><img src="ad/adb2_02.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_03.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_04.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_05.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_06.jpg" alt="频道名称" /></a></li>
+			</ul>
+		</div>
+  </div>
+</div>
+
+<div class="ydc-spfl">
+  <div class="ydc-spflmx">
+    <p class="ydc-spfltit">商品公告：</p>
+    <div class="ydc-spfls" id="aebiz_center">
+			<a href="#">80后童年回忆时尚宝宝秀</a>
+			<a href="#">时尚宝宝秀，全场满100减20！</a>
+			<a href="#">新款夏装5折回馈中！</a>
+			<a href="#">全球限量疯抢，六位设计师精彩演绎</a>
+			<a href="#">忆童年囧事，磊奖等你拿</a>
+			<a href="#">80后童年回忆时尚宝宝秀</a>
+			<a href="#">时尚宝宝秀，全场满100减20！</a>
+			<a href="#">新款夏装5折回馈中！</a>
+			<a href="#">全球限量疯抢，六位设计师精彩演绎</a>
+			<a href="#">忆童年囧事，磊奖等你拿</a>
+		</div>
+  	<p class="ydc-spflja" id="aebiz_right"></p>  
+  </div>
+</div>
+<script type="text/javascript" language="javascript">
+    var aebiz = new ScrollPic();
+    aebiz.scrollContId = "aebiz_center"; //内容容器ID
+    aebiz.arrLeftId = "aebiz_left";//左箭头ID
+    aebiz.arrRightId = "aebiz_right"; //右箭头ID
+    aebiz.listEvent = "onmouseover"; //切换事件
+    aebiz.frameWidth = 860;//显示框宽度
+    aebiz.pageWidth = 172; //翻页宽度
+    aebiz.speed = 30; //移动速度(单位毫秒，越小越快)
+    aebiz.space = 10; //每次移动像素(单位px，越大越快)
+    aebiz.autoPlay = true; //自动播放
+    aebiz.upright = false; //垂直滚动
+    aebiz.autoPlayTime = 4; //自动播放间隔时间(秒)
+    aebiz.initialize(); //初始化
+</script>
+<div class="yd-pdwid yd-ad"><a href="#"><img src="ad/adb2_07.jpg" /></a></div>
+
+<div class="yd-width">
+	<div class="ydc-list">
+    <div class="tit"><h2><a href="#">全部商品分类</a></h2></div>		
+		<div class="ydc-listmain" id="ydcListMain">
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>							
+				</div>
+				<s></s>
+				<div class="ydc-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>
+			<!--静态没有用的分类-->
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>	
+				</div>
+				<s></s>
+				<div class="ydc-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>		
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydc-listbox">22</div>
+			</div>	
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydc-listbox">22</div>
+			</div>			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydc-listbox">22</div>
+			</div>				
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydc-listbox">22</div>
+			</div>			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydc-listbox">22</div>
+			</div>	
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydc-listbox">22</div>
+			</div>				
+			<!--静态没有用的分类over-->															
+		</div>
+		<div class="botbg"></div>	
+	</div>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var objStr = "#ydcListMain div.box";
+			$(objStr).each(function(i){
+				$(this).mouseover(function(){
+					$($("div.ydc-listbox")[i]).show();
+					$($(objStr)[i]).addClass("cur");
+					var heightx=$('#ydcListMain > div.cur').height();
+					$($("#ydcListMain div.box s")[i]).height(heightx);			
+				});
+				$(this).hover(function(){},function(){
+					$($("div.ydc-listbox")[i]).hide();
+					$($(objStr)[i]).removeClass("cur");
+				});	
+			});
+		});
+	</script>
+	<div class="ydc-toprignt">
+		<div class="ydc-tpleft">
+			<div class="ydc-bigad" id="ydcBigAd">
+				<div class="pic">
+					<p class="first"><img src="ad/ydc_ad.jpg" /></p>
+					<p><img src="ad/ydc_ad.jpg" /></p>
+					<p><img src="ad/ydc_ad.jpg" /></p>
+					<p><img src="ad/ydc_ad.jpg" /></p>					
+					<p><img src="ad/ad2_08.jpg" /></p>
+				</div>
+				<div class="tabbut">
+					<p class="cur">热门商品抢先购买</p>
+					<p>外贸品牌折扣</p>
+					<p>休闲裤打底鞋</p>
+					<p>外贸品牌折扣</p>
+					<p>休闲裤打底鞋</p>					
+				</div>
+			</div>
+			<script type="text/javascript">
+			$('#ydcBigAd div.pic p').soChange({thumbObj:'#ydcBigAd div.tabbut p',thumbNowClass:'cur',	slideTime:500,changeTime:5000,delayTime:0});
+			</script>			
+			<div class="ydc-tplbotad yd-ad">
+				<img src="ad/ad2_09.jpg"/>
+				<img src="ad/ad2_10.jpg"/>
+				<img src="ad/ad2_11.jpg"/>			
+			</div>
+			<div class="ydc-tgad yd-ad">
+				<a href="#"><img src="ad/ad2_12.jpg"/></a>
+				<a href="#"><img src="ad/ad2_13.jpg"/></a>
+				<a href="#"><img src="ad/ad2_14.jpg"/></a>		
+			</div>			
+			<div class="yd-ad yd-pdwid"><img src="ad/ad2_15.jpg"/></div>
+			<div class="ydc-pp">
+				<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>
+				<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>		
+			</div>
+		</div><!--ydc-tpleft-->
+		
+		<div class="ydc-tprig">
+			<div class="ydc-hdst" id="ydcHdst">
+				<ul>
+					<li class="li cur"><a href="#">热卖80后童年回忆</a></li> 
+					<li class="box first"><a href="#"><img src="ad/ad2_19.jpg"/ ></a></li> 
+					<li class="li"><a href="#">时尚宝宝秀满一百减二十</a></li> 
+					<li class="box"><a href="#"><img src="ad/ad2_19.jpg"/></a></li> 
+					<li class="li"><a href="#">新款夏装5折回馈中</a></li> 
+					<li class="box"><a href="#"><img src="ad/ad2_19.jpg"/></a></li> 
+					<li class="li"><a href="#">防晒美帽5折包邮</a></li> 
+					<li class="box"><a href="#"><img src="ad/ad2_19.jpg"/></a></li> 
+					<li class="li"><a href="#">忆童年囧事有大奖等你拿</a></li>  
+					<li class="box"><a href="#"><img src="ad/ad2_19.jpg"/></a></li> 
+				</ul>
+			</div>		
+			<script type="text/javascript">
+			$('#ydcHdst li.box').soChange({thumbObj:'#ydcHdst li.li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:0});
+			</script>		
+			<div class="yd-pdwid yd-ad"><img src="ad/ad2_17.jpg"/></div>
+			<div class="yd-pdwid yd-ad"><img src="ad/ad2_18.jpg"/></div>		
+			<div class="ydc-swly" id="ybcSwly">
+				<div class="tittle"><a href="#">商务旅游</a></div>
+				<div class="tabmain" id="tabmain">
+					<div class="tit">
+						<li class="cur">机票</li>
+						<li>酒店</li>
+						<li class="wu">旅游度假</li>
+					</div>
+					<div class="box box01"><img src="ad/ad2_12x.jpg"/></div>
+					<div class="box"><img src="ad/ad2_12x.jpg"/></div>
+					<div class="box">33333333</div>
+				</div>			
+			</div>
+			<script type="text/javascript">
+			$('#ybcSwly div.box').soChange({thumbObj:'#ybcSwly div.tit li',thumbNowClass:'cur',slideTime:0,autoChange:false, delayTime:100});
+			</script>						
+		</div>	
+	</div><!--ydc-toprignt-->
+</div>
+
+<div class="yd-pdwid ydc-mrtj">
+  <div class="tittle"><h2><img src="ad/ydc_tit01.jpg" /></h2></div>
+  <div class="ne">
+    <div class="leftsor" id="aebizLeft"></div>
+    <div class="ydc-mrmid" id="aebizCenter">
+			<div class="product first">
+				<p class="ad01" ><a href="#"><img src="ad/ad2_20.jpg" /></a></p>
+				<p class="ad02 adlist">还剩<b>7</b>小时<b>37</b>分<b>3</b>秒</p>
+				<p class="ad03"><a href="#"> <img src="ad/ad2_21.jpg" /></a></p>		
+			</div>
+			<div class="product">
+				<p class="ad01" ><a href="#"><img src="ad/ad2_20a.jpg" /></a></p>
+				<p class="ad02 adlist">还剩<b>7</b>小时<b>37</b>分<b>3</b>秒</p>
+				<p class="ad03"><a href="#"> <img src="ad/ad2_21a.jpg" /></a></p>		
+			</div>
+			<div class="product">
+				<p class="ad01" ><a href="#"><img src="ad/ad2_20b.jpg" /></a></p>
+				<p class="ad02 adlist">还剩<b>7</b>小时<b>37</b>分<b>3</b>秒</p>
+				<p class="ad03"><a href="#"> <img src="ad/ad2_21.jpg" /></a></p>		
+			</div>
+			<div class="product">
+				<p class="ad01" ><a href="#"><img src="ad/ad2_20c.jpg" /></a></p>
+				<p class="ad02 adlist">还剩<b>7</b>小时<b>37</b>分<b>3</b>秒</p>
+				<p class="ad03"><a href="#"> <img src="ad/ad2_21a.jpg" /></a></p>		
+			</div>
+			<div class="product">
+				<p class="ad01" ><a href="#"><img src="ad/ad2_20d.jpg" /></a></p>
+				<p class="ad02 adlist">还剩<b>7</b>小时<b>37</b>分<b>3</b>秒</p>
+				<p class="ad03"><a href="#"> <img src="ad/ad2_21.jpg" /></a></p>		
+			</div>			
+    </div>
+    <div class="rightsor" id="aebizRight"></div> 
+  </div>  
+</div>
+<script type="text/javascript" language="javascript">
+    var aebiz = new ScrollPic();
+    aebiz.scrollContId = "aebizCenter"; //内容容器ID
+    aebiz.arrLeftId = "aebizLeft";//左箭头ID
+    aebiz.arrRightId = "aebizRight"; //右箭头ID
+    aebiz.listEvent = "onmouseover"; //切换事件
+    aebiz.frameWidth = 880;//显示框宽度
+    aebiz.pageWidth = 352; //翻页宽度
+    aebiz.speed = 20; //移动速度(单位毫秒，越小越快)
+    aebiz.space = 10; //每次移动像素(单位px，越大越快)
+    aebiz.autoPlay = true; //自动播放
+    aebiz.upright = false; //垂直滚动
+    aebiz.autoPlayTime = 8; //自动播放间隔时间(秒)
+    aebiz.initialize(); //初始化
+</script>
+
+<!--今日团购-->
+<div class="ydc-jrtg">
+  <div class="tittle"><h2><img src="ad/ydc_tit02.jpg" /></h2></div>
+  <div class="ne">
+		<div class="ne-li">
+			<p class="ad01" ><a href="#"><span>10折：</span>摇号买车不如来58抽奖，呼之即来的多款香车伴你清凉一夏</a></p>
+			<p class="ad02"><a href="#"><img src="ad/ad2_22.jpg" /> </a></p>
+			<p class="ad03"><span class="ad03left"> 原价：￥1500</span><span class="ad03right">北京</span></p>	
+			<p class="ad04"><b class="ad04left"><span>￥</span>0</b><b class="ad04right"><a href="#"><img src="images/ydc-jrtg.gif" /> </a></b></p>		
+		</div>
+		<div class="ne-li">
+			<p class="ad01" ><a href="#"><span>0折：</span>摇号买车不如来58抽奖，呼之即来的多款香车伴你清凉一夏</a></p>
+			<p class="ad02"><a href="#"><img src="ad/ad2_22.jpg" /> </a></p>
+			<p class="ad03"><span class="ad03left"> 原价：￥1500</span><span class="ad03right">北京</span></p>	
+			<p class="ad04"><b class="ad04left"><span>￥</span>0</b><b class="ad04right"><a href="#"><img src="images/ydc-jrtg.gif" /> </a></b></p>
+		</div>
+		<div class="ne-li">
+			<p class="ad01" ><a href="#"><span>0折：</span>摇号买车不如来58抽奖，呼之即来的多款香车伴你清凉一夏</a></p>
+			<p class="ad02"><a href="#"><img src="ad/ad2_22.jpg" /> </a></p>
+			<p class="ad03"><span class="ad03left"> 原价：￥1500</span><span class="ad03right">北京</span></p>	
+			<p class="ad04"><b class="ad04left"><span>￥</span>0</b><b class="ad04right"><a href="#"><img src="images/ydc-jrtg.gif" /> </a></b></p>	
+		</div>
+		<div class="ne-li wu">
+			<p class="ad01" ><a href="#"><span>0折：</span>摇号买车不如来58抽奖，呼之即来的多款香车伴你清凉一夏</a></p>
+			<p class="ad02"><a href="#"><img src="ad/ad2_22.jpg" /> </a></p>
+			<p class="ad03"><span class="ad03left"> 原价：￥1500</span><span class="ad03right">北京</span></p>	
+			<p class="ad04"><b class="ad04left"><span>￥</span>0</b><b class="ad04right"><a href="#"><img src="images/ydc-jrtg.gif" /> </a></b></p>	
+		</div>
+  </div>
+</div>
+
+<!--新店开张-->
+<div class="ydc-xdkz">
+  <div class="tittle"><h2><img src="ad/ydc_tit03.jpg" /></h2></div>
+  <div class="ne">
+    <div class="neleft">
+      <div class="neleft_top">
+					<div class="bigad yd-ad">
+						<a href="#"><img src="ad/ad2_23.jpg"/></a>
+						<a href="#"><img src="ad/ad2_23.jpg"/></a>
+					</div>
+					<div class="smad yd-ad">					
+						<a href="#"><img src="ad/ad2_24.jpg"/></a>
+					</div>
+					<div class="smadx yd-ad">					
+						<a href="#"><img src="ad/ad2_24x.jpg"/></a>
+					</div>
+      </div>
+			<div class="neleft_bot yd-ad">
+				<a href="#"><img src="ad/ad2_25.jpg"/></a>
+			</div>
+    </div>
+    <div class="neright yd-ad">
+			<a href="#"><img src="ad/ad2_26.jpg"/></a>  
+		</div>
+  </div>
+</div>
+<div class="yd-pdwid yd-ad"><a href="#"><img src="ad/adb2_07.jpg" /></a></div>
+
+<div class="ydc-jxycd">
+  <div class="tittle"><h2><img src="ad/ydc_tit04.jpg" /></h2></div>
+  <div class="ne" id="cdTab">
+    <div class="ne-le">
+			<ul>
+			<li class="cur">日用消费品</li>
+			<li>农副产品</li>
+			<li>水产品</li>
+			<li>土特产品</li>
+			<li>工艺品</li>
+			<li>母婴</li> 
+			<li>美容</li> 
+			<li>服饰</li> 
+			<li>户外运动</li>
+			</ul> 
+    </div>
+    <div class="ne-rig first">
+			<div class="ne-riga">   
+				<div class="ne-riga yd-ad">
+					<a href="#"><img src="ad/ad2_28.jpg"/></a> 
+				</div>
+				<div class="ne-bot">
+					<div class="product">
+					 <strong><a href="#"><img src="ad/ad2_32.jpg"/></a> </strong>
+					 <p class="ne-bot01"><a href="#">Avene眼霜</a></p>
+					 <p class="ne-bot02"> <a href="#">眼部舒缓天使</a></p>
+					 <p class="ne-bot03">￥<b>69.00</b></p>
+					</div>
+					<div class="product">
+					 <strong><a href="#"><img src="ad/ad2_32.jpg"/></a> </strong>
+					 <p class="ne-bot01"><a href="#">Avene眼霜</a></p>
+					 <p class="ne-bot02"> <a href="#">眼部舒缓天使</a></p>
+					 <p class="ne-bot03">￥<b>69.00</b></p>
+					</div>
+					<div class="product">
+					 <strong><a href="#"><img src="ad/ad2_32.jpg"/></a> </strong>
+					 <p class="ne-bot01"><a href="#">Avene眼霜</a></p>
+					 <p class="ne-bot02"> <a href="#">眼部舒缓天使</a></p>
+					 <p class="ne-bot03">￥<b>69.00</b></p>
+					</div>
+					<div class="product">
+					 <strong><a href="#"><img src="ad/ad2_32.jpg"/></a> </strong>
+					 <p class="ne-bot01"><a href="#">Avene眼霜</a></p>
+					 <p class="ne-bot02"> <a href="#">眼部舒缓天使</a></p>
+					 <p class="ne-bot03">￥<b>69.00</b></p>
+					</div>
+				</div>			
+			</div>
+			<div class="ne-rigb"><a href="#"><img src="ad/ad2_30.jpg"/></a> </div>
+			<div class="ne-rigc">
+					<p><a href="#"><img src="ad/ad2_31.jpg"/></a></p>
+					<p><a href="#"><img src="ad/ad2_31.jpg"/></a></p>
+					<p><a href="#"><img src="ad/ad2_31.jpg"/></a></p>
+					<p><a href="#"><img src="ad/ad2_31.jpg"/></a></p>
+					<p><a href="#"><img src="ad/ad2_31.jpg"/></a></p>
+					<p><a href="#"><img src="ad/ad2_31.jpg"/></a></p>
+					<p><a href="#"><img src="ad/ad2_31.jpg"/></a></p>
+			</div>	 
+    </div>
+		<div class="ne-rig">2222</div>
+		<div class="ne-rig">3333</div>	
+		<div class="ne-rig">4</div>	
+		<div class="ne-rig">5</div>	
+		<div class="ne-rig">6</div>	
+		<div class="ne-rig">7</div>	
+		<div class="ne-rig">8</div>	
+		<div class="ne-rig">9</div>										
+  </div>
+	<script type="text/javascript">
+		$('#cdTab div.ne-rig').soChange({thumbObj:'#cdTab div.ne-le li',thumbNowClass:'cur',slideTime:0,autoChange:false, delayTime:100});
+	</script>			
+</div>
+
+<!--嘉兴名牌产品-->
+<div class="ydc-jxmpcp">
+  <div class="tittle"><h2><img src="ad/ydc_tit05.jpg" /></h2></div>
+  <div class="ne" id="jxppTab">
+    <div class="jxmpcp-le">
+			<ul>
+			 <li class="cur">天然植物配方pp霜</li>
+			 <li>天然植物配方pp霜</li>
+			 <li>天然植物配方pp霜</li>
+			 <li>天然植物配方pp霜</li>
+			 <li>天然植物配方pp霜</li>
+			 <li class="wu">天然植物配方pp霜</li> 
+			</ul>  
+    </div>
+	  <div class="jxmpcp-ria">
+			<p class="first"><img src="ad/ad2_33.jpg"/></p>
+			<p><img src="ad/ad2_33.jpg"/></p>
+			<p><img src="ad/ad2_33.jpg"/></p>			
+			<p><img src="ad/ad2_33.jpg"/></p>			
+			<p><img src="ad/ad2_33.jpg"/></p>			
+			<p><img src="ad/ad2_33.jpg"/></p>			
+		</div>			
+		<script type="text/javascript">
+			$('#jxppTab div.jxmpcp-ria p').soChange({thumbObj:'#jxppTab div.jxmpcp-le li',thumbNowClass:'cur',slideTime:500,changeTime:3000,autoChange:false, delayTime:100});
+		</script>
+		<div class="jxmpcp-rib">
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_02.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_03.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_02.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_03.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_02.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_03.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_02.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>
+			<div class="box">
+				<p class="pic"><a href="#"><img src="ad/pp_03.jpg"/></a></p><p class="name"><a href="#">那沃</a></p>					
+			</div>			
+		</div>
+  </div>
+</div>
+
+<!--家具/建材-->
+<div class="ydc-jujc">
+	<div class="tittle"><h2><img src="ad/ydc_tit06.jpg" /></h2></div>
+  <div class="ne">
+    <div class="jujc-le"><a href="#"><img src="ad/ad2_35.jpg" /></a></div>
+    <div class="jujc-mid">
+	    <div class="jujc-midtit">
+				<h2><img src="ad/ydc_tit07.jpg" /></h2>
+				<ul >
+						<li class="mid01" id="aebizx_left"></li>
+						<li class="mid02" id="aebizx_right"></li>
+				</ul>
+			</div>
+			<div class="mid-box" id="aebizx_center">
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>								
+			</div>
+    </div> 
+		<script type="text/javascript" language="javascript">
+				var aebiz = new ScrollPic();
+				aebiz.scrollContId = "aebizx_center"; //内容容器ID
+				aebiz.arrLeftId = "aebizx_left";//左箭头ID
+				aebiz.arrRightId = "aebizx_right"; //右箭头ID
+				aebiz.listEvent = "onmouseover"; //切换事件
+				aebiz.frameWidth = 540;//显示框宽度
+				aebiz.pageWidth = 135; //翻页宽度
+				aebiz.speed = 30; //移动速度(单位毫秒，越小越快)
+				aebiz.space = 10; //每次移动像素(单位px，越大越快)
+				aebiz.autoPlay = true; //自动播放
+				aebiz.upright = false; //垂直滚动
+				aebiz.autoPlayTime = 4; //自动播放间隔时间(秒)
+				aebiz.initialize(); //初始化
+		</script>   
+    <div class="jujc-rig" id="jujc-rig">
+			<div class="tit">
+				<ul>
+					<li class="cur">精品推荐</li>
+					<li>新品上价</li>
+				</ul>
+			</div>
+			<div class="jujc-box jujc-box01">
+				<div class="jujc-boxa">
+					<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong><p><a href="#">欧式仿古静音挂钟欧式</a></p>
+				</div>
+				<div class="jujc-boxa">
+					<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong><p><a href="#">欧式仿古静音挂钟欧式</a></p>
+				</div>
+				<div class="jujc-boxa">
+					<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong><p><a href="#">欧式仿古静音挂钟欧式</a></p>
+				</div>
+				<div class="jujc-boxa">
+					<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong><p><a href="#">欧式仿古静音挂钟欧式</a></p>
+				</div>
+	  	</div>
+	  	<div class="jujc-box">22222</div>
+    </div>
+		<script type="text/javascript">$('#jujc-rig div.jujc-box').soChange({thumbObj:'#jujc-rig div.tit li',thumbNowClass:'cur',slideTime:0,autoChange:false, delayTime:300});</script>
+  </div>
+</div>
+<!--服装/箱包-->
+<div class="ydc-fzxb">
+	<div class="tittle"><h2><img src="ad/ydc_tit08.jpg" /></h2></div>
+  <div class="ne">
+		<div class="nele">
+			<div class="nele-a" id="neleAtab">
+				<div class="nele-atit">
+					<h2><img src="ad/ydc_tit09.jpg" /></h2>
+					<ul><li class="cur">1</li><li>2</li></ul>
+				</div>
+				<div class="box">
+					<p class="first"><a href="#"><img src="ad/adc_41.jpg"/></a></p>
+					<p><a href="#"><img src="ad/adc_41.jpg"/></a></p>
+				</div>
+			</div>
+			<script type="text/javascript">$('#neleAtab div.box p').soChange({thumbObj:'#neleAtab div.nele-atit li',thumbNowClass:'cur',slideTime:500,changeTime:5000,autoChange:false,delayTime:0});</script>	
+			<div class="nele-b">
+				<div class="nele-btit">
+						<h2><img src="ad/ydc_tit07.jpg" /></h2>
+						<span class="sor"></span>
+				</div>
+				<div class="box"><img src="ad/adc_42.jpg"/></div>
+			</div>				
+			<div class="nele-c">
+				<div class="nele-ctit">
+						<h2><img src="ad/ydc_tit10.jpg" /></h2>
+						<span class="sor"></span>
+				</div>
+				<div class="box"><img src="ad/adc_43.jpg"/></div>
+			</div>
+		</div><!--nele-->
+		<div class="nerig yd-ad"><img src="ad/adc_44.jpg"/></div>
+  </div>
+</div>
+
+<div class="yd-ad yd-pdwid"><a href="#"><img src="ad/adc_45.jpg"/></a></div>
+
+<!--美容/珠宝-->
+<div class="ydc-mrzb">
+	<div class="tittle"><h2><img src="ad/ydc_tit11.jpg" /></h2></div>
+  <div class="ne">
+    <div class="mrzb-le yd-ad"><img src="ad/adc_46.jpg" /></div>
+    <div class="mrzb-mid" id="mrzbMid" >
+			<div class="mrzb-midtit">
+				<ul>
+					<li class="cur first"><span>面部</span></li>
+					<li><span>身体美容</span></li>
+					<li><span>面部</span></li>
+					<li><span>身体</span></li>
+					<li><span>面部</span></li>
+					<li><span>身体</span></li>
+					<li><span>面部</span></li>
+					<li><span>身体</span></li>
+					<li><span>其他</span></li>
+				</ul>
+			</div>
+			<div class="mrzb-midmain first">
+				<div class="mrzb-boxa">
+					<p class="ad04"><a href="#"><img src="ad/ad2_36.jpg" /></a></p>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟欧式仿古静音挂钟</a></p>
+					<p class="ad02" >欧式仿古静音挂钟</p>
+					<p class="ad03">￥<b>245.00</b></p>
+				</div>			
+				<div class="mrzb-boxa">
+					<p class="ad04"><a href="#"><img src="ad/ad2_36.jpg" /></a></p>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<p class="ad02" >欧式仿古静音挂钟</p>
+					<p class="ad03">￥<b>245.00</b></p>
+				</div>		
+				<div class="mrzb-boxa">
+					<p class="ad04"><a href="#"><img src="ad/ad2_36.jpg" /></a></p>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<p class="ad02" >欧式仿古静音挂钟</p>
+					<p class="ad03">￥<b>245.00</b></p>
+				</div>		
+				<div class="mrzb-boxa">
+					<p class="ad04"><a href="#"><img src="ad/ad2_36.jpg" /></a></p>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<p class="ad02" >欧式仿古静音挂钟</p>
+					<p class="ad03">￥<b>245.00</b></p>
+				</div>					
+			</div>
+			<div class="mrzb-midmain">222</div>
+			<div class="mrzb-midmain">33</div> 
+			<div class="mrzb-midmain">44</div> 
+			<div class="mrzb-midmain">55</div> 
+			<div class="mrzb-midmain">66</div> 
+			<div class="mrzb-midmain">77</div> 
+			<div class="mrzb-midmain">88</div> 		
+			<div class="mrzb-midmain">99</div> 		
+    </div>
+		<script type="text/javascript">$('#mrzbMid div.mrzb-midmain').soChange({thumbObj:'#mrzbMid div.mrzb-midtit li',thumbNowClass:'cur',	slideTime:0,autoChange:false, delayTime:100});</script>			
+		<div class="mrzb-rig" id="mrzbRig">	
+			<div class="mrzb-rigtit">
+				<ul>
+					<li class="cur"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="mrzb-box">
+	 			<p class="first"><a href="#"><img src="ad/adc_47.jpg"  /></a></p>
+				<p><a href="#"><img src="ad/adc_47.jpg"  /></a></p>
+				<p><a href="#"><img src="ad/adc_47.jpg"  /></a></p>
+				<p><a href="#"><img src="ad/adc_47.jpg"  /></a></p>
+				<p><a href="#"><img src="ad/adc_47.jpg"  /></a></p>
+			</div>
+    </div>
+		<script type="text/javascript">$('#mrzbRig div.mrzb-box p').soChange({thumbObj:'#mrzbRig div.mrzb-rigtit li',thumbNowClass:'cur',	slideTime:500,changeTime:5000,delayTime:0});</script>		
+ </div>
+</div>
+
+<!--家具/建材-->
+<div class="ydc-jujc">
+	<div class="tittle"><h2><img src="ad/ydc_tit06.jpg" /></h2></div>
+  <div class="ne">
+    <div class="jujc-le"><a href="#"><img src="ad/ad2_35.jpg" /></a></div>
+    <div class="jujc-mid">
+	    <div class="jujc-midtit">
+				<h2><img src="ad/ydc_tit07.jpg" /></h2>
+				<ul >
+						<li class="mid01" id="aebiz_left01"></li>
+						<li class="mid02" id="aebiz_right01"></li>
+				</ul>
+			</div>
+			<div class="mid-box" id="aebiz_center01">
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>
+				<div class="mid-boxa">
+					<strong><a href="#"><img src="ad/ad2_36.jpg" align="absmiddle"/></a></strong>
+					<p class="ad01"><a href="#">欧式仿古静音挂钟</a></p>
+					<s class="ad02" >市场价：￥158</s>
+					<p class="ad03">￥<b>85包邮</b></p>
+				</div>								
+			</div>
+    </div> 
+		<script type="text/javascript" language="javascript">
+				var aebiz = new ScrollPic();
+				aebiz.scrollContId = "aebiz_center01"; //内容容器ID
+				aebiz.arrLeftId = "aebiz_left01";//左箭头ID
+				aebiz.arrRightId = "aebiz_right01"; //右箭头ID
+				aebiz.listEvent = "onmouseover"; //切换事件
+				aebiz.frameWidth = 540;//显示框宽度
+				aebiz.pageWidth = 135; //翻页宽度
+				aebiz.speed = 30; //移动速度(单位毫秒，越小越快)
+				aebiz.space = 10; //每次移动像素(单位px，越大越快)
+				aebiz.autoPlay = true; //自动播放
+				aebiz.upright = false; //垂直滚动
+				aebiz.autoPlayTime = 4; //自动播放间隔时间(秒)
+				aebiz.initialize(); //初始化
+		</script>  
+    <div class="ydc-spbj" id="ydcSpbj">
+			<div class="spbj-rigtit">
+				<h2><img src="ad/ydc_tit12.jpg" /></h2>
+				<ul >
+					<li class="cur"></li><li></li><li ></li>
+				</ul>
+			 </div>
+			<div class="spbj-rigmain">
+				<p class="first"><a href="#"><img src="ad/adc_37.jpg" width="184" /></a></p>
+				<p><a href="#"><img src="ad/adc_37.jpg" width="184" /></a></p>
+				<p><a href="#"><img src="ad/adc_37.jpg" width="184" /></a></p>								
+			</div>
+		</div>
+		<script type="text/javascript">$('#ydcSpbj div.spbj-rigmain p').soChange({thumbObj:'#ydcSpbj div.spbj-rigtit li',thumbNowClass:'cur',	slideTime:500,changeTime:5000,delayTime:0});</script>	
+  </div>
+</div>
+
+<div class="ydc-ppbox">
+	<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>	
+	<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_01.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_02.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_03.jpg"/></a></p>
+	<p><a href="#"><img src="ad/pp_04.jpg"/></a></p>						
+</div>
+
+<div class="ydc-botbox yd-pdwid">
+	<div class="ydc-smjd">
+		<h2><img src="ad/ydc_tit13.jpg"/></h2>
+		<div class="top-box">
+			<div class="le-ad"><img src="ad/ydc_ad02.jpg"/></div>
+			<div class="rig-ad"><img src="ad/ydc_ad03.jpg"/></div>			
+		</div>
+		<div class="top-box bot-box">
+			<div class="le-ad"><img src="ad/ydc_ad02.jpg"/></div>
+			<div class="rig-ad"><img src="ad/ydc_ad03.jpg"/></div>			
+		</div>		
+	</div>
+	
+	<div class="ydc-smjd ydc-hwyd">
+		<h2><img src="ad/ydc_tit14.jpg"/></h2>
+		<div class="top-box">
+			<div class="le-ad"><img src="ad/ydc_ad04.jpg"/></div>
+			<div class="rig-ad"><img src="ad/ydc_ad03.jpg"/></div>			
+		</div>
+		<div class="top-box bot-box">
+			<div class="le-ad"><img src="ad/ydc_ad02.jpg"/></div>
+			<div class="rig-ad"><img src="ad/ydc_ad03.jpg"/></div>			
+		</div>		
+	</div>	
+</div>
+
+
+<div class="ydb-hotcity">
+	<div class="link">
+		<a href="#">上海</a>
+		<a href="#">杭州</a>
+
+		<a href="#">北京</a>
+		<a href="#">天津</a>
+		<a href="#">武汉</a>
+		<a href="#">广州</a>
+		<a href="#">宁波</a>
+		<a href="#">嘉兴</a>
+
+		<a href="#">湖州</a>
+		<a href="#">温州</a>
+		<a href="#">厦门</a>
+		<a href="#">深圳</a>
+		<a href="#">兰州</a>
+		<a href="#">汕头</a>
+
+		<a href="#">珠海</a>
+		<a href="#">安庆</a>
+		<a href="#">乌鲁木齐</a>   
+		<a href="#">合肥</a>
+		<a href="#">大连</a>
+		<a href="#">南宁</a>
+
+		<a href="#">三亚</a>	
+	</div>
+</div>
+
+<div class="ydb-bot">
+	<div class="ydb-bothelp">
+		<div class="box box01">
+			<h5><a href="#">购物指南</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>
+
+		<div class="box box02">
+			<h5><a href="#">配送方式</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+
+
+		</div>
+		<div class="box box03">
+			<h5><a href="#">支付方式</a></h5>
+
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+
+			<p>·<a href="#">订单状态</a></p>			
+		</div>		
+		<div class="box box04">
+			<h5><a href="#">售后服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>				
+		<div class="box box05">
+
+			<h5><a href="#">特色服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>	
+	</div>
+	<div class="botad"><a href="#"><img src="ad/adb_29.jpg"></a></div>
+</div>
+<div class="ydb-botlink">
+	<a href="#">合作伙伴</a>|
+	<a href="#">帮助中心</a>|
+	<a href="#">联系我们</a>|
+	<a href="#">网站地图</a>|
+	<a href="#">商家入驻</a>|
+	<a href="#">供应商加盟</a>|
+	<a href="#">加盟易都</a>|
+	<a href="#">导购</a>|
+	<a href="#">网站联盟</a>|
+	<a href="#">官方博客</a>|
+	<a href="#">广告联系</a>
+
+</div>
+<div class="ydb-botmain">
+	建设运营：易都天下科技发展有限公司  版权所有：Copyright 2003-2011,www.ifreecity.com <br>
+	客服热线：400-000-000  客服邮箱：yidu_ifreecity.com<br>
+	经营许可证编号 京ICP证000000号 <br>
+	<img src="ad/adb_30.jpg">
+</div>
+<div class="ydc-adprod">
+	<h5>热卖单品</h5>
+	<div class="ydc-adamin" id="ydc-adamin">
+		<div class="li cur"><a href="#">热卖80后</a></div> 
+		<div class="box first">
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+		</div> 
+		<div class="li"><a href="#">时尚宝宝</a></div> 
+		<div class="box">
+			 <div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+		</div> 
+		<div class="li"><a href="#">时尚宝宝</a></div> 
+		<div class="box">
+			 <div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+		</div> 		
+		<div class="li"><a href="#">时尚宝宝</a></div> 
+		<div class="box">
+			 <div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+		</div> 
+		<div class="li"><a href="#">时尚宝宝</a></div> 
+		<div class="box">
+			 <div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+			<div class="box01">
+				<strong><a href="#"><img src="ad/ad2_37.jpg" /></a></strong>
+				<p><a href="#">时尚格子品T恤</a></p>
+			</div>
+		</div> 				
+	</div>  
+</div>
+<script type="text/javascript">$('#ydc-adamin div.box').soChange({thumbObj:'#ydc-adamin div.li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:0});</script>
+</body>
+</html>

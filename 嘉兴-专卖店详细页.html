@@ -1,0 +1,793 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="x-ua-compatible" content="ie=7"/>
+<title>易都</title>
+<link href="css/global.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="css/jxStore.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="css/jquery.jcarousel.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.soChange.js"></script>
+<script type="text/javascript" src="js/ScrollPic.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+</head>
+<body class="ydb-bodybg">
+<div class="ydc-top yd-width">
+  <div class="ydc-left">您好，请<a href="#">[登录]</a> <a href="#">[会员注册]</a></div>
+  <div class="ydc-right">
+	<ul>
+		<li class="first"><a href="#">易都天下</a></li>	
+		<li><a href="#">我要买</a></li>
+		<li><a href="#">商家注册</a></li> 
+		<li><a href="#">我的易都</a></li> 
+		<li><a href="#">我的订单</a></li> 
+		<li class="gwc"><a href="#">购物车(0)</a></li>  
+		<li><a href="#">收藏夹</a></li> 
+		<li><a href="#">帮助中心</a></li>  
+		<li class="kf"><a href="#"> 在线客服</a></li>   
+		<li><a href="#">社区</a></li>
+		<li class="tel">热线电话：4008200573</li>
+	</ul>
+  </div>
+</div>
+
+<div class="ydc-nav">
+  <div class="ydc-navmain">
+    <div class="logo"><a href="#"><img src="ad/adb2_01.jpg" /></a></div>
+		<div class="soso">
+			<div class="spfl" id="ydcSerch">
+				<input name="" type="text" class="list" value="商品分类"/><s></s>
+				<div class="openser" id="ydcSerchBox">
+						<a href="javascript:void(0)" rel="nofollow">商品分类一</a>
+						<a href="javascript:void(0)" rel="nofollow">商品分类二</a>	
+						<a href="javascript:void(0)" rel="nofollow">商品分类三</a>											
+				</div>
+			</div>
+			<script type="text/javascript">
+				$("#ydcSerch s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					var offset = $(event.target).offset();//取消事件冒泡
+					$("#ydcSerchBox").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydcSerchBox").hide() });//单击空白区域隐藏
+				$("#ydcSerchBox a").click(function(event) { $("#ydcSerchBox").hide() });//单击弹出层则自身隐藏
+				$('#ydcSerchBox a').click(function(){
+					$("#ydcSerch").find("input").val($(this).html());
+					$(this).find('#ydcSerchBox').hide();
+				});
+			</script>	
+			<input name="" type="text" class="serch" value="请输入您需要的商品"/>
+			<a href="#" class="serchbtx">搜索</a>
+		</div>
+		<div class="ydc-navbot">
+			<ul>
+				<li><a href="#"><img src="ad/adb2_02.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_03.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_04.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_05.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_06.jpg" alt="频道名称" /></a></li>
+			</ul>
+		</div>
+  </div>
+</div>
+
+<div class="ydc-spfl">
+  <div class="ydc-spflmx">
+    <p class="ydc-spfltit">商品公告：</p>
+    <div class="ydc-spfls" id="aebiz_center">
+			<a href="#">80后童年回忆时尚宝宝秀</a>
+			<a href="#">时尚宝宝秀，全场满100减20！</a>
+			<a href="#">新款夏装5折回馈中！</a>
+			<a href="#">全球限量疯抢，六位设计师精彩演绎</a>
+			<a href="#">忆童年囧事，磊奖等你拿</a>
+			<a href="#">80后童年回忆时尚宝宝秀</a>
+			<a href="#">时尚宝宝秀，全场满100减20！</a>
+			<a href="#">新款夏装5折回馈中！</a>
+			<a href="#">全球限量疯抢，六位设计师精彩演绎</a>
+			<a href="#">忆童年囧事，磊奖等你拿</a>
+		</div>
+  	<p class="ydc-spflja" id="aebiz_right"></p>  
+  </div>
+</div>
+<script type="text/javascript" language="javascript">
+    var aebiz = new ScrollPic();
+    aebiz.scrollContId = "aebiz_center"; //内容容器ID
+    aebiz.arrLeftId = "aebiz_left";//左箭头ID
+    aebiz.arrRightId = "aebiz_right"; //右箭头ID
+    aebiz.listEvent = "onmouseover"; //切换事件
+    aebiz.frameWidth = 860;//显示框宽度
+    aebiz.pageWidth = 172; //翻页宽度
+    aebiz.speed = 30; //移动速度(单位毫秒，越小越快)
+    aebiz.space = 10; //每次移动像素(单位px，越大越快)
+    aebiz.autoPlay = true; //自动播放
+    aebiz.upright = false; //垂直滚动
+    aebiz.autoPlayTime = 4; //自动播放间隔时间(秒)
+    aebiz.initialize(); //初始化
+</script>
+<div class="ydd-path yd-width">
+	<div class="path">
+		<a href="#"><b>首页</b></a>&gt;
+		<a href="#">店铺</a>&gt;
+		<span>嘉兴涩女郎服装专卖店</span>
+	</div>
+	<div class="link">
+		<a href="#">安全购物指南</a>|
+		<a href="#">举报此商品</a>|
+		<a href="#">举报低谷商品有奖！</a>| 
+		<a href="#">消费者维权中心</a>
+	</div>
+</div>
+
+<div class="yd-pdwid">
+	<div class="ydd-topad"><img src="ad/ydd_ad1.jpg"/></div>
+	<div class="ydd-nav">
+		<ul>
+		<li class="cur"><a href="#">店铺首页</a></li>
+		<li><a href="#">信用评价</a></li>
+		<li><a href="#">店铺介绍</a></li>
+		<li><a href="#">商口展示</a></li>
+		<li><a href="#">信用保障</a></li>
+		<li class="last"><a href="#">经营者信息</a></li>
+		</ul>
+	</div>
+</div>
+<div class="yd-width">
+	<div class="ydd-left">
+		<div class="ydd-info yde-info">
+			<div class="tit"><h2>商家信息</h2></div>
+			<div class="main">				
+				<dl><dt>商家昵称：</dt><dd>嘉兴涩女郎服装专卖店</dd></dl>
+				<dl><dt>店铺类型：</dt><dd>专卖店</dd></dl>
+				<dl><dt>保&nbsp;证&nbsp;金：</dt><dd>捌佰元整</dd></dl>
+				<dl><dt>经营范围：</dt><dd>服装/配饰类</dd></dl>
+				<dl><dt>注册地址：</dt><dd>浙江省嘉兴市迎宾大道58号</dd></dl>
+				<dl><dt>权&nbsp;利&nbsp;人：</dt><dd>妙玲</dd></dl>
+				<dl><dt>有效期至：</dt><dd>2012年7月11日</dd></dl>
+				<dl><dt>年检记录：</dt><dd>年检合格</dd></dl>
+				<dl><dt>信誉评价：</dt><dd><img src="images/ydd-xin.gif"/><img src="images/ydd-xin.gif"/><img src="images/ydd-xin.gif"/></dd></dl>	
+				<div class="bot">
+					<a href="#" class="sc">收藏本店铺</a>
+					<a href="#" class="jr">进入店铺</a>
+				</div>			
+			</div>
+		</div><!--ydd-info-->
+		
+		<div class="ydd-map yde-map">
+			<div class="tit"><h2>商家地图</h2></div>
+			<div class="main"><img src="ad/ydd-ad2.jpg"/></div>
+		</div>
+		
+		<div class="ydd-kf yde-kf">
+			<div class="tit"><h2>客服中心</h2></div>		
+			<div class="main">
+				<dl><dt>营业时间：</dt><dd><b>9：00-24：00</b></dd></dl>
+				<dl><dt>营业状态：</dt><dd>正在营业</dd></dl>			
+			</div>
+			<div class="main mid">
+				<dl><dt>在线客服：</dt><dd><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a> <a href="#"><img src="images/ydd-qq.gif"/>婷婷</a><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a></dd></dl>
+				<dl><dt>售后客服：</dt><dd><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a></dd></dl>			
+			</div>
+			<div class="main bot">
+				<dl><dt>投诉客服：</dt><dd><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a></dd></dl>
+			</div>			
+		</div><!--ydd-kf-->
+		
+		<div class="ydd-serch yde-serch">
+			<div class="tit"><h2>店内搜索</h2><s></s></div>
+			<div class="ser"><input name="" type="text" value="请输入关键字"><a href="#">搜索</a></div>
+			<div class="bot">热门：<a href="#">吊带</a> <a href="#">连衣裙</a> <a href="#">T恤</a> <a href="#">人字拖</a></div>
+		</div>
+		
+		<div class="ydd-list yde-list">
+			<div class="tit"><h2>商品分类</h2><s></s></div>
+			<div class="main" id="yddList">
+				<h2><a href="#">查看所有分类&gt;&gt;</a></h2>
+				<h3><s class="cur"></s><a href="#">精品男装</a></h3>
+				<div class="box open">
+					<ul>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>						
+					</ul>
+				</div>
+				<h3><s></s><a href="#">精品男装</a></h3>
+				<div class="box">
+					<ul>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>						
+					</ul>
+				</div>
+				<h3><s></s><a href="#">精品男装</a></h3>
+				<div class="box">
+					<ul>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>
+						<li><a href="#">男士背心</a></li>						
+					</ul>
+				</div>												
+			</div>
+			<script type="text/javascript">
+				var objStr = "#yddList h3 s";
+				$(objStr).each(function(i){
+					$(this).click(function(){
+					$($("#yddList h3")[i]).next("div.box").slideToggle(20);				 
+					$(this).toggleClass("cur");  
+					$(this).siblings("s").removeClass("cur");  
+					});
+				});
+			</script>			
+		</div><!--ydd-list-->
+		
+		<div class="ydd-cxhd yde-cxhd">
+			<div class="tit"><h2>促销活动</h2><s></s></div>
+			<div class="main">
+				<ul>
+					<li class="red">·<a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></li>
+					<li class="red">·<a href="#">冰丝糖果色七分打底裤</a></li>
+					<li>·<a href="#">冰丝糖果色七分打底裤</a></li>
+					<li>·<a href="#">冰丝糖果色七分打底裤</a></li>
+					<li>·<a href="#">冰丝糖果色七分打底裤</a></li>	
+					<li>·<a href="#">冰丝糖果色七分打底裤</a></li>
+					<li>·<a href="#">冰丝糖果色七分打底裤</a></li>										
+				</ul>
+			</div>	
+		</div><!--ydd-cxhd-->
+		
+		<div class="ydd-ph yde-ph">
+			<div class="tit"><h2>销售排行</h2><span><a href="#">更多&gt;&gt;</a></span></div>
+			<div class="main">
+				<div class="product">
+					<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+					<p class="price">￥<span>119.00元</span></p>
+					<p class="sout">已售出<b>123123</b>笔</p>
+				</div>	
+				<div class="product">
+					<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+					<p class="price">￥<span>119.00元</span></p>
+					<p class="sout">已售出<b>123123</b>笔</p>
+				</div>	
+				<div class="product">
+					<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+					<p class="price">￥<span>119.00元</span></p>
+					<p class="sout">已售出<b>123123</b>笔</p>
+				</div>	
+				<div class="product last">
+					<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+					<p class="price">￥<span>119.00元</span></p>
+					<p class="sout">已售出<b>123123</b>笔</p>
+				</div>							
+			</div>
+		</div><!--ydd-ph-->
+		
+		<div class="yde-tjsp">
+			<div class="tit"><h2>推荐商品</h2></div>
+			<div class="main">
+				<div class="product">
+					<strong><a href="#"><img src="ad/ydd-ad5.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+					<p class="ykj">一口价：<b>400.00元</b></p>
+					<p class="sout">已售出：<b>123</b>件</p>
+					<div class="pl">
+						<p class="xinx"><span style="width:60%"></span></p><!--控制百分比可控制好评度-->
+						<p class="plxx">(已有116人评论)</p>
+					</div>
+				</div>				
+				<div class="product">
+					<strong><a href="#"><img src="ad/ydd-ad5.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+					<p class="ykj">一口价：<b>400.00元</b></p>
+					<p class="sout">已售出：<b>123</b>件</p>
+					<div class="pl">
+						<p class="xinx"><span style="width:80%"></span></p>
+						<p class="plxx">(已有116人评论)</p>
+					</div>
+				</div>	
+				<div class="product">
+					<strong><a href="#"><img src="ad/ydd-ad5.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+					<p class="ykj">一口价：<b>400.00元</b></p>
+					<p class="sout">已售出：<b>123</b>件</p>
+					<div class="pl">
+						<p class="xinx"><span style="width:30%"></span></p>
+						<p class="plxx">(已有116人评论)</p>
+					</div>
+				</div>								
+			</div>		
+		</div><!--yde-tjsp-->
+		
+		<div class="yde-riad yd-ad"><img src="ad/yde-ad1.jpg"/></div>
+	</div>
+	
+	<div class="ydd-right">
+		<h1>涩女郎夏季大促【5折】2011雪纺连衣裙</h1>
+		<div class="yde-top">
+			<div class="yde-pdinfo">
+				<div class="yde-pdinfopic">
+					<div id="BigImage" class="jqzoom" ><img id="middleImage" src="ad/center-1.jpg"  longdesc="ad/big-1.jpg" align="absmiddle"/></div>				
+					<div class="jq_libox">
+						<ul id="mycarousel" class="jcarousel jcarousel-skin-tango">
+							<li><span class="cur_on"><img  src="ad/small-1.jpg" name="center-1.jpg" id="big-1.jpg" border="0" /></span></li>
+							<li><span><img src="ad/small-2.jpg" name="center-2.jpg" id="big-2.jpg" /></span></li>
+							<li><span><img src="ad/small-3.jpg" name="center-3.jpg" id="big-3.jpg" /></span></li>
+							<li><span><img src="ad/small-2.jpg" name="center-2.jpg" id="big-2.jpg" /></span></li>
+							<li><span><img src="ad/small-3.jpg" name="center-3.jpg" id="big-3.jpg" /></span></li>
+							<li><span><img src="ad/small-2.jpg" name="center-2.jpg" id="big-2.jpg" /></span></li>											
+						</ul>
+					</div>					
+				</div>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$("#mycarousel").jcarousel({initCallback:mycarousel_initCallback});
+						$(".jqzoom").jqueryzoom({
+							xzoom:280,
+							yzoom:280,
+							offset:20,
+							position:"right",
+							preload:1,
+							lens:1
+						});
+					});
+					function mycarousel_initCallback(carousel){
+						$("#mycarousel li").mouseover(function(){
+							var JQ_img = $("img", this);
+							var image_name = JQ_img.attr("name");
+							var big_name = JQ_img.attr("id");
+							//$("#middleImage").attr("src", "${CONTEXT}/" + image_name).attr("longdesc", "${CONTEXT}/" + big_name); 
+							$("#middleImage").attr("src", "ad/" + image_name).attr("longdesc", "ad/" + big_name);
+							$(this).siblings().each(function(){
+							$("span", this).removeClass().addClass("curr_base");
+							})
+							$("span", this).addClass("cur_on");			
+						})
+					};
+				</script>								
+				<div class="yde-scpd"><a href="#">收藏该商品</a></div>
+			</div><!--yde-pdinfo-->
+			
+			<div class="yde-pdxxi">
+				<p class="bh">产品编号：1039815</p>
+				<p class="price">商&nbsp;城&nbsp;价：<b><span>￥</span>185</b> 市&nbsp;场&nbsp;价：￥355</p>
+				<p class="goto"><span>至浙江&nbsp;&nbsp;：</span>快递10.0元&nbsp;&nbsp;&nbsp;EMS：20.0元</p>
+				<p class="xx"></p>
+				<p class="sout">已&nbsp;出&nbsp;售：<b>32</b>件</p>				
+				<div class="pj">
+					<p class="left">评&nbsp;&nbsp;&nbsp;&nbsp;价：</p>
+					<p class="xinx"><span style="width:60%;"></span></p>
+					<span class="fen">5.0分</span>
+					<a href="#">（已有3人评论）</a>
+				</div>
+				<p class="sjf">送&nbsp;积&nbsp;分：单件送<b>132</b>分</p>				
+				<p class="tsfw">特色服务：<a href="#"><img src="images/yde-ts01.gif" align="absmiddle"/></a> <a href="#"><img src="images/yde-ts02.gif" align="absmiddle"/></a> <a href="#"><img src="images/yde-ts03.gif" align="absmiddle"/></a></p>							
+				<p class="xx"></p>
+				<div class="fkfs">
+					<p class="left">付款方式：</p>
+					<div class="ser" id="ydeFkfs" style="z-index:3;">
+						<span>支持信用卡支付</span><s></s>
+						<div class="openbox">
+							<a href="javascript:void(0)">支持信用卡支付</a>						
+							<a href="javascript:void(0)">网上银行</a>
+							<a href="javascript:void(0)">货到付款</a>
+							<a href="javascript:void(0)">支付宝</a>
+						</div>
+					</div>
+					<a href="#" class="help">（帮助中心）</a>
+				</div>
+			<script type="text/javascript">
+				$("#ydeFkfs s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					$("#ydeFkfs div.openbox").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydeFkfs div.openbox").hide() });//单击空白区域隐藏
+				$("#ydeFkfs div.openbox a").click(function(event) { $("#ydeFkfs div.openbox").hide() });//单击弹出层则自身隐藏
+				$('#ydeFkfs div.openbox a').click(function(){
+				$("#ydeFkfs").find("span").html($(this).html());
+				$(this).find('#ydeFkfs div.openbox').hide();
+				});
+			</script>					
+				
+				<div class="cm">
+					<p class="left">尺&nbsp;&nbsp;&nbsp;&nbsp;码：</p>
+					<a href="#" class="cur">S</a> <a href="#">M</a> <a href="#">L</a> <a href="#">XL</a> <a href="#">XXL</a>
+				</div>
+							
+				<div class="ysfl" >
+					<p class="left">颜色分类：</p>
+					<div class="colorli" style="z-index:2" id="ydeYsfl">
+						<p class="list"><span style="background:#F00"></span>红色</p><s></s>
+						<div class="box">
+							<p><span style="background:#0F0"></span>绿色</p>
+							<p><span style="background:#00F"></span>蓝色</p>
+							<p><span style="background:#FF0"></span>黄色</p>
+							<p><span style="background:#C0F"></span>紫色</p>
+						</div>
+					</div>	
+				</div>
+			<script type="text/javascript">
+				$("#ydeYsfl s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					$("#ydeYsfl div.box").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydeYsfl div.box").hide() });//单击空白区域隐藏
+				$("#ydeYsfl div.box p").click(function(event) { $("#ydeYsfl div.box").hide() });//单击弹出层则自身隐藏
+				$('#ydeYsfl div.box p').click(function(){
+				$("#ydeYsfl").find("p.list").html($(this).html());
+				$(this).find('#ydeYsfl div.box').hide();
+				});
+			</script>						
+				<div class="number">
+					<p class="left">数&nbsp;&nbsp;&nbsp;&nbsp;量：</p>
+					<div class="li" style="z-index:1" id="ydeNum">
+						<p>1</p><s></s>
+						<div class="box">
+							<a href="javascript:void(0)">1</a><a href="javascript:void(0)">2</a><a href="javascript:void(0)">3</a><a href="javascript:void(0)">4</a><a href="javascript:void(0)">5</a>
+						</div>
+					</div>
+					<a href="#" class="kc">（库存150件）</a>										
+				</div>
+			<script type="text/javascript">
+				$("#ydeNum s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					$("#ydeNum div.box").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydeNum div.box").hide() });//单击空白区域隐藏
+				$("#ydeNum div.box a").click(function(event) { $("#ydeNum div.box").hide() });//单击弹出层则自身隐藏
+				$('#ydeNum div.box a').click(function(){
+				$("#ydeNum").find("p").html($(this).html());
+				$(this).find('#ydeNum div.box').hide();
+				});
+			</script>					
+				<div class="botbtx">
+					<a href="#" class="ljgm">立即购物</a>
+					<a href="#" class="jrgwc">加入购物车</a>
+				</div>		
+			</div><!--yde-pdxxi-->
+		</div>
+		
+		<div class="yde-spxx">
+			<div class="tit">
+				<h2>商品详情</h2>|
+				<a href="#">评价详情（<b>30</b>条）</a>|
+				<a href="#">成交记录（<b>72</b>条）</a>|
+				<a href="#">支付方式</a>|
+				<a href="#">售后服务</a>|
+				<a href="#">留言簿</a>|	
+			</div>
+			<div class="main">
+				<p class="tt">单笔订单满299元立减50元！上不封顶；</p>
+				<div class="box">
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="33%">品牌：伊芙丽</td>
+							<td width="33%">货号：123123</td>
+							<td width="33%">袖长：短袖</td>
+						</tr>
+						<tr>
+							<td width="33%">风格：淑女</td>
+							<td width="33%">图案：条纹</td>
+							<td width="33%">材质：其它</td>
+						</tr>						
+						<tr>
+							<td width="33%">颜色分类：桔红</td>
+							<td width="33%">图案：条纹</td>
+							<td width="33%">材质：其它</td>
+						</tr>
+						<tr>
+							<td width="33%">颜色分类：桔红</td>
+							<td width="33%">图案：条纹</td>
+							<td width="33%">材质：其它</td>
+						</tr>												
+					</table>
+				</div>
+			</div>
+		</div><!--yde-spxx-->
+		
+		<div class="yde-spjs">
+			<h2>商品介绍</h2>
+			<div class="main"><img src="ad/yde-ad3.jpg"/></div>
+		</div>
+		
+		<div class="yde-sppj">
+			<h2>商品评价</h2>
+			
+			<div class="yde-pjtop">
+				<div class="left">
+					<p class="tt">与描述相符</p>
+					<strong>4.8</strong>
+					<p class="xinx"><span style="width:48%"></span></p><br/>
+					<p class="dfcs"><span>89</span>次打分<p>
+				</div>
+				<div class="right">
+					<div class="dingw"><span class="num" style="left:20%;">1</span></div>
+				</div>
+			</div>
+			
+			<div class="yde-pjmid">
+				<div class="listli" id="ydePjlist">
+					<span class="li">有评论内容</span><s></s>
+					<div class="box"><a href="javascript:void(0)">有评论内容</a><a href="javascript:void(0)">无评论内容</a></div>
+				</div>
+			<script type="text/javascript">
+				$("#ydePjlist s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					$("#ydePjlist div.box").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydePjlist div.box").hide() });//单击空白区域隐藏
+				$("#ydePjlist div.box a").click(function(event) { $("#ydePjlist div.box").hide() });//单击弹出层则自身隐藏
+				$('#ydePjlist div.box a').click(function(){
+				$("#ydePjlist").find("span.li").html($(this).html());
+				$(this).find('#ydeNum div.box').hide();
+				});
+			</script>				
+				
+				
+				<p>共有<b>3</b>条评论</p>
+			</div>
+			
+			<div class="yde-pjmess">
+				<div class="left">
+					<p class="message">裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；</p>
+					<p class="leix">[07.12]&nbsp;&nbsp;颜色类型：红色&nbsp;&nbsp;尺码：XXL</p>
+				</div>
+				<div class="right">
+					<p>买家：</p>
+					<p class="name">雨后的天空</p>
+				</div>
+			</div>
+
+			<div class="yde-pjmess">
+				<div class="left">
+					<p class="message">裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；</p>
+					<p class="leix">[07.12]&nbsp;&nbsp;颜色类型：红色&nbsp;&nbsp;尺码：XXL</p>
+				</div>
+				<div class="right">
+					<p>买家：</p>
+					<p class="name">雨后的天空</p>
+				</div>
+			</div>
+
+			<div class="yde-pjmess">
+				<div class="left">
+					<p class="message">裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；裙子很漂亮，质量很好，卖家态度很好；</p>
+					<p class="leix">[07.12]&nbsp;&nbsp;颜色类型：红色&nbsp;&nbsp;尺码：XXL</p>
+				</div>
+				<div class="right">
+					<p>买家：</p>
+					<p class="name">雨后的天空</p>
+				</div>
+			</div>
+			
+			<div class="yde-page">
+				<p>
+					<span class="noup">&lt;&lt;&nbsp;上一页</span>
+					<!--<a href="#">&lt;&lt;&nbsp;上一页</a>-->
+					<a href="#" class="cur">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<span class="dd">···</span>
+					<a href="#" class="cur">下一页&nbsp;&gt;&gt;</a>
+					<!--<span class="noup">下一页&nbsp;&gt;&gt;</span>-->					
+				</p>
+			</div>	
+								
+		</div><!--yde-spjs-->
+		
+		<div class="yde-xsjl">
+			<h2>销售记录</h2>
+			<div class="topmain">
+				<div class="left">
+					<span>价格：<b>2980000</b>元</span>
+					<div class="pic">
+						<a href="#"><img src="images/ydd-qq.gif"/></a>
+						<a href="#"><img src="images/ydd-qq.gif"/></a>						
+						<a href="#"><img src="images/ydd-qq.gif"/></a>
+						<a href="#"><img src="images/ydd-qqx.gif"/></a>	
+						<a href="#" class="scsp">收藏该商品</a>									
+					</div>
+				</div>
+				<div class="right">
+					<span>将商品分享到：</span>
+					<a href="#"><img src="images/ydd-fx01.gif"/></a>
+					<a href="#"><img src="images/ydd-fx02.gif"/></a>
+					<a href="#"><img src="images/ydd-fx03.gif"/></a>				
+					<a href="#"><img src="images/ydd-fx04.gif"/></a>					
+					<a href="#"><img src="images/ydd-fx05.gif"/></a>
+					<a href="#"><img src="images/ydd-fx06.gif"/></a>
+					<a href="#"><img src="images/ydd-qq.gif"/></a>					
+					<a href="#"><img src="images/ydd-fx07.gif"/></a>
+				</div>
+			</div>
+			<div class="botmain">
+				<h4>最近一个月成交记录</h4>
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<th width="17%">买家</th>
+						<th width="35%">商品名称</th>
+						<th width="10%">出价</th>
+						<th width="10%">购买数量</th>
+						<th width="20%">成交时间</th>
+						<th width="8%">状态</th>
+					</tr>
+					<tr>
+						<td class="lanzi">幸福相随</td>
+						<td><a href="#" class="lanzi">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></td>
+						<td><b>111</b></td>
+						<td>1</td>
+						<td>2011-01-01&nbsp;12:00:00</td>
+						<td>成交</td>						
+					</tr>
+					<tr>
+						<td class="lanzi">幸福相随</td>
+						<td><a href="#" class="lanzi">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></td>
+						<td><b>111</b></td>
+						<td>1</td>
+						<td>2011-01-01&nbsp;12:00:00</td>
+						<td>成交</td>						
+					</tr>					
+				</table>
+			</div>
+			
+			<div class="yde-page">
+				<p>
+					<span class="noup">&lt;&lt;&nbsp;上一页</span>
+					<!--<a href="#">&lt;&lt;&nbsp;上一页</a>-->
+					<a href="#" class="cur">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<span class="dd">···</span>
+					<a href="#" class="cur">下一页&nbsp;&gt;&gt;</a>
+					<!--<span class="noup">下一页&nbsp;&gt;&gt;</span>-->					
+				</p>
+			</div>	
+			<div class="yde-morels"><a href="#">查看更多历史记录&nbsp;&gt;&gt;</a></div>				
+		</div><!--yde-xsjl-->
+		
+		<div class="yde-dztj">
+			<h2>店长推荐</h2>			
+			<div class="main">
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad4.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad4.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad4.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad4.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad4.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad4.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>				
+			</div>
+		</div>
+
+		<div class="yde-lls">
+			<h2>看过该商品的会员还看了</h2>			
+			<div class="main">
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad5.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad5.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad5.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>
+				<div class="product">
+					<strong><a href="#"><img src="ad/yde-ad5.jpg" alt="商品名称" align="absmiddle"/></a></strong>
+					<p class="price"><span>￥</span>119.00元</p>
+					<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+				</div>			
+			</div>
+		</div>
+		
+	</div><!--ydd-right-->
+</div>
+
+
+
+<div class="ydb-bot">
+	<div class="ydb-bothelp">
+		<div class="box box01">
+			<h5><a href="#">购物指南</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>
+
+		<div class="box box02">
+			<h5><a href="#">配送方式</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>
+		<div class="box box03">
+			<h5><a href="#">支付方式</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>		
+		<div class="box box04">
+			<h5><a href="#">售后服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>				
+		<div class="box box05">
+
+			<h5><a href="#">特色服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>	
+	</div>
+	<div class="botad"><a href="#"><img src="ad/adb_29.jpg"></a></div>
+</div>
+<div class="ydb-botlink">
+	<a href="#">合作伙伴</a>|
+	<a href="#">帮助中心</a>|
+	<a href="#">联系我们</a>|
+	<a href="#">网站地图</a>|
+	<a href="#">商家入驻</a>|
+	<a href="#">供应商加盟</a>|
+	<a href="#">加盟易都</a>|
+	<a href="#">导购</a>|
+	<a href="#">网站联盟</a>|
+	<a href="#">官方博客</a>|
+	<a href="#">广告联系</a>
+</div>
+<div class="ydb-botmain">
+	建设运营：易都天下科技发展有限公司  版权所有：Copyright 2003-2011,www.ifreecity.com <br>
+	客服热线：400-000-000  客服邮箱：yidu_ifreecity.com<br>
+	经营许可证编号 京ICP证000000号 <br>
+	<img src="ad/adb_30.jpg">
+</div>
+</body>
+</html>

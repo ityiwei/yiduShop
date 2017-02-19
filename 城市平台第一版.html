@@ -1,0 +1,1660 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="x-ua-compatible" content="ie=7"/>
+<title>易都</title>
+<link href="css/global.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="css/channels.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.soChange.js"></script>
+<script type="text/javascript" src="js/ScrollPic.js"></script>
+</head>
+<body class="ydb-bodybg">
+<div class="ydb-topad"><img src="ad/adb_01.jpg"></div>
+<div class="ydb-head yd-width">
+	<div class="ydb-logo"><img src="ad/adb_02.jpg"></div>
+	<div class="ydb-headrig">
+		<div class="toplink">
+			<ul>
+				<li class="first">[<a href="#" class="login">登陆</a> <a href="#">会员注册</a>]</li>
+				<li><a href="#">易都天下</a></li>	
+				<li><a href="#">我要买</a></li>
+				<li><a href="#">商家注册</a></li> 
+				<li><a href="#">我的易都</a></li> 
+				<li><a href="#">我的订单</a></li> 
+				<li class="gwc"><a href="#">购物车(0)</a></li>  
+				<li><a href="#">收藏夹</a></li> 
+				<li><a href="#">帮助中心</a></li>  
+				<li class="kf"><a href="#"> 在线客服</a></li>   
+				<li><a href="#">社区</a></li>
+			</ul>
+		</div>
+		
+		<div class="nav">
+			<div class="main">
+				<a href="#"><img src="ad/adb_nav01.jpg" alt="首页"></a>
+				<a href="#"><img src="ad/adb_nav02.jpg" alt="易都资讯"></a>
+				<a href="#"><img src="ad/adb_nav03.jpg" alt="首页"></a>
+				<a href="#"><img src="ad/adb_nav04.jpg" alt="易都资讯"></a>
+				<a href="#"><img src="ad/adb_nav05.jpg" alt="易都资讯"></a>				
+			</div>
+		</div>
+		
+		<div class="serch">
+			<div class="ser" id="ydSerch">
+				<input name="" value="请选择您需要的分类" type="text"><s></s><a href="#" class="serx">搜索</a>
+				<div class="openbox" id="ydSerchBox">
+						<a href="javascript:void(0)" rel="nofollow">商品分类一</a>
+						<a href="javascript:void(0)" rel="nofollow">商品分类二</a>	
+						<a href="javascript:void(0)" rel="nofollow">商品分类三</a>											
+				</div>
+			</div>
+			<script type="text/javascript">
+				$("#ydSerch s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					var offset = $(event.target).offset();//取消事件冒泡
+					$("#ydSerchBox").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydSerchBox").hide() });//单击空白区域隐藏
+				$("#ydSerchBox a").click(function(event) { $("#ydSerchBox").hide() });//单击弹出层则自身隐藏
+				$('#ydSerchBox a').click(function(){
+					$("#ydSerch").find("input").val($(this).html());
+					$(this).find('#ydSerchBox').hide();
+				});
+			</script>		
+			<div class="tel">热线电话<br>4008200573</div>
+		</div>
+	</div><!--ydb-headrig-->
+</div>
+
+<div class="yd-width">
+	<div class="ydb-list">
+		<div class="tit"><h2><a href="#">全部商品分类</a></h2></div>
+		<div class="ydb-listmain" id="ydbListMain">
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>
+			<!--没有用的静态分类-->
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 		
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+							<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>										
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>
+			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>
+			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>
+			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>		
+			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>			
+			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>
+					<a href="#">女鞋新品</a> 
+					<a href="#">运动鞋服</a>			
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>		
+			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a> 
+					<a href="#">品质男装</a>
+					<a href="#">男鞋</a>		
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>		
+			
+			<div class="box">
+				<h4><a href="#">虚拟商品</a></h4>
+				<div class="link">
+					<a href="#">女装</a>
+					<a href="#">男装</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a>
+					<a href="#">内衣</a>
+					<a href="#">每日上新</a>						
+				</div>
+				<s></s>
+				<div class="ydb-listbox">
+					<div class="listli">
+						<div class="listbox">
+							<h5><a href="#">夏季必备</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">美肤沙龙</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>
+						<div class="listbox">
+							<h5><a href="#">经典香氛</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>	
+						<div class="listbox last">
+							<h5><a href="#">男士护肤</a></h5>
+							<div class="linkbox">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>
+						</div>																	
+					</div><!--listli-->
+					
+					<div class="brandli">
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>
+						<div class="brandbox last">
+							<h5><a href="#">彩妆品牌</a></h5>
+							<div class="brandlink">
+								<a href="#">女装</a><a href="#">男装</a><a href="#">内衣</a><a href="#">男鞋</a> <a href="#">品质男装</a><a href="#">男鞋</a><a href="#">女鞋新品</a> <a href="#">运动鞋服</a>							
+							</div>							
+						</div>																		
+					</div><!--brandli-->
+				</div>
+			</div>
+			<!--没有用的静态分类over-->																				
+		</div>	
+		<div class="botbg"></div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var objStr = "#ydbListMain div.box";
+			$(objStr).each(function(i){
+				$(this).mouseover(function(){
+					$($("div.ydb-listbox")[i]).show();
+					$($(objStr)[i]).addClass("cur");
+					var heightx=$('#ydbListMain > div.cur').height();
+					$($("#ydbListMain div.box s")[i]).height(heightx);			
+				});
+				$(this).hover(function(){},function(){
+					$($("div.ydb-listbox")[i]).hide();
+					$($(objStr)[i]).removeClass("cur");
+				});	
+			});
+		});
+	</script>
+	
+	<div class="ydb-toprig">
+		<div class="ydb-tple">
+			<div class="bigad"><img src="ad/adb_03.jpg"></div>	
+			<div class="ydb-sorad" id="ydbSorad">
+				<div class="totpic first">
+					<p><a href="#"><img src="ad/adb_04.jpg"></a></p>
+					<p><a href="#"><img src="ad/adb_04.jpg"></a></p>
+					<p><a href="#"><img src="ad/adb_04.jpg"></a></p>
+					<p><a href="#"><img src="ad/adb_04x.jpg"></a></p>
+				</div>	
+				<div class="totpic">
+					<p><a href="#"><img src="ad/adb_04.jpg"></a></p>
+					<p><a href="#"><img src="ad/adb_04.jpg"></a></p>
+					<p><a href="#"><img src="ad/adb_04.jpg"></a></p>
+					<p><a href="#"><img src="ad/adb_04x.jpg"></a></p>
+				</div>
+				<div class="totpic">3</div>
+				<div class="totpic">4</div>	
+				<div class="totpic">5</div>
+				<div class="totpic">6</div>
+				<div class="totpic">7</div>	
+				<div class="totpic">8</div>																												
+				<div class="tabbut">
+					<ul>
+						<li class="cur">热门商品</li>
+						<li>品牌特卖</li>
+						<li>免费领取</li>						
+						<li>爆款包包</li>						
+						<li>保湿面膜</li>						
+						<li>休闲裤</li>
+						<li>环保除蚊</li>
+						<li>短袖T恤</li>																		
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+			$('#ydbSorad div.totpic').soChange({thumbObj:'#ydbSorad div.tabbut li',thumbNowClass:'cur',slideTime:300,autoChange:false,thumbOverEvent:false});
+			</script>				
+			<div class="ydb-pp">
+				<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+				<p><a href="#"><img src="ad/pp_04.jpg"></a></p>		
+			</div>
+		</div>
+		
+		<div class="ydb-tpri">
+			<div class="ydb-ggong" id="ydbGgon">
+				<div class="tit">
+					<ul>
+						<li class="li01"><h4 class="cur">商城公告</h4></li>
+						<li class="li02"><h4>促销信息</h4></li>
+					</ul>
+				</div>
+				<div class="main first">
+					<ul>
+					<li class="hang">·<a href="#">热卖80后童年回忆</a></li>
+					<li class="hang">·<a href="#">时尚宝宝秀，全场满100减20</a></li>
+					<li class="hang">·<a href="#">Nautica新款夏装5折回馈中！</a></li>
+					<li>·<a href="#">防晒美帽5折包邮防晒美帽5折包邮防晒美帽5折包邮</a></li>
+					<li>·<a href="#">忆同年囧事有大奖等你拿</a></li>
+					<li>·<a href="#">留学生和她的网店</a></li>
+					<li>·<a href="#">学生购新款夏装5折</a></li>
+					<li class="more"><a href="#">更多&gt;&gt;</a></li>
+					</ul>
+				</div>
+				<div class="main">
+					<ul>
+					<li class="hang">·<a href="#">时尚宝宝秀，全场满100减20</a></li>
+					<li class="hang">·<a href="#">时尚宝宝秀，全场满100减20</a></li>
+					<li class="hang">·<a href="#">时尚宝宝秀，全场满100减20</a></li>
+					<li>·<a href="#">防晒美帽5折包邮防晒美帽5折包邮防晒美帽5折包邮</a></li>
+					<li>·<a href="#">忆同年囧事有大奖等你拿</a></li>
+					<li>·<a href="#">留学生和她的网店</a></li>
+					<li>·<a href="#">学生购新款夏装5折</a></li>
+					<li class="more"><a href="#">更多&gt;&gt;</a></li>
+					</ul>				
+				</div>
+			</div>
+			<script type="text/javascript">
+			$('#ydbGgon div.main').soChange({thumbObj:'#ydbGgon div.tit li h4',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:80});
+			</script>				
+			<div class="ydb-tpriad"><img src="ad/adb_05.jpg"></div>
+			
+			<div class="ydb-swly" id="ydbSwly">
+				<h4>商务旅游</h4>
+				<div class="tit">
+					<ul>
+						<li class="cur first">机票</li><li>酒店</li><li>旅游度价</li>
+					</ul>
+				</div>
+				<div class="main first"><img src="ad/adb_07.jpg"></div>
+				<div class="main">2</div>
+				<div class="main">3</div>
+			</div>
+			<script type="text/javascript">
+			$('#ydbSwly div.main').soChange({thumbObj:'#ydbSwly div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:300});
+			</script>	
+		</div><!--ydb-tpri-->
+		
+		<div class="ydb-jrtj">
+			<div class="tit">
+				<h2><img src="ad/ydb_tit01.jpg" alt="分类名称"></h2>
+				<a href="#" class="more">更多&gt;&gt;</a>
+			</div>
+			<div class="main">
+				<div class="porduct">
+					<p class="time">还剩  <b>17</b>小时<b>37</b>分<b>18</b>秒</p>
+					<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">纯银项链吊坠</a></p>
+					<p class="price"><s>原价：￥1038</s><br><span>特价：<b>￥998</b></span></p>
+				</div>
+				<div class="porduct">
+					<p class="time">还剩  <b>17</b>小时<b>37</b>分<b>18</b>秒</p>
+					<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">纯银项链吊坠</a></p>
+					<p class="price"><s>原价：￥1038</s><br><span>特价：<b>￥998</b></span></p>
+				</div>
+				<div class="porduct">
+					<p class="time">还剩  <b>17</b>小时<b>37</b>分<b>18</b>秒</p>
+					<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">纯银项链吊坠</a></p>
+					<p class="price"><s>原价：￥1038</s><br><span>特价：<b>￥998</b></span></p>
+				</div>
+				<div class="porduct last">
+					<p class="time">还剩  <b>17</b>小时<b>37</b>分<b>18</b>秒</p>
+					<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">纯银项链吊坠</a></p>
+					<p class="price"><s>原价：￥1038</s><br><span>特价：<b>￥998</b></span></p>
+				</div>				
+			</div>
+		</div>
+	</div><!--ydb-toprig-->
+	
+</div>
+
+<div class="yd-pdwid">
+	<div class="ydb-lemdad yd-ad">
+		<a href="#"><img src="ad/adb_08.jpg"></a>
+		<a href="#"><img src="ad/adb_09.jpg"></a>
+	</div>
+	<div class="ydb-tg">
+		<div class="tit"><h2><a href="#"><img src="ad/ydb_tit02.jpg"></a></h2></div>
+		<div class="main">
+			<div class="porduct">
+				<p class="name"><a href="#">仅88元！乐天上美6月新品蛋糕1个（1.5磅）</a></p>
+				<strong><a href="#"><img src="ad/ydb_pd02.jpg" alt="商品名称" align="absmiddle"></a></strong>
+				<p class="bot">
+					<span class="left">原价：<b>￥1038</b></span>
+					<span class="right"><b>1038</b>人购买</span>
+				</p>
+			</div>
+			<div class="porduct">
+				<p class="name"><a href="#">仅88元！乐天上美6月新品蛋糕1个（1.5磅）</a></p>
+				<strong><a href="#"><img src="ad/ydb_pd02.jpg" alt="商品名称" align="absmiddle"></a></strong>
+				<p class="bot">
+					<span class="left">原价：<b>￥1038</b></span>
+					<span class="right"><b>1038</b>人购买</span>
+				</p>
+			</div>
+			<div class="porduct">
+				<p class="name"><a href="#">仅88元！乐天上美6月新品蛋糕1个（1.5磅）</a></p>
+				<strong><a href="#"><img src="ad/ydb_pd02.jpg" alt="商品名称" align="absmiddle"></a></strong>
+				<p class="bot">
+					<span class="left">原价：<b>￥1038</b></span>
+					<span class="right"><b>1038</b>人购买</span>
+				</p>
+			</div>
+			<div class="porduct last">
+				<p class="name"><a href="#">仅88元！乐天上美6月新品蛋糕1个（1.5磅）</a></p>
+				<strong><a href="#"><img src="ad/ydb_pd02.jpg" alt="商品名称" align="absmiddle"></a></strong>
+				<p class="bot">
+					<span class="left">原价：<b>￥1038</b></span>
+					<span class="right"><b>1038</b>人购买</span>
+				</p>
+			</div>		
+		</div>
+	</div><!--ydb-tg-->
+	
+	<div class="ydb-xdkz">
+		<div class="tit"><h2><a href="#"><img src="ad/ydb_tit03.jpg"></a></h2></div>	
+		<div class="main">
+			<div class="mnad" id="ydbMnadOne">
+				<div class="pic">
+					<p class="first"><img src="ad/adb_10.jpg"></p>
+					<p><img src="ad/adb_10a.jpg"></p>
+					<p><img src="ad/adb_10b.jpg"></p>
+				</div>
+				<div class="smpic">
+					<p class="cur first"><img src="ad/adb_11.jpg"></p>
+					<p><img src="ad/adb_11.jpg"></p>
+					<p><img src="ad/adb_11.jpg"></p>				
+				</div>
+			</div>
+			<script type="text/javascript">
+			$('#ydbMnadOne div.pic p').soChange({thumbObj:'#ydbMnadOne div.smpic p',thumbNowClass:'cur',	slideTime:500,changeTime:5000,delayTime:100});
+			</script>				
+			<div class="mnad" id="ydbMnadTwo">
+				<div class="pic">
+					<p class="first"><img src="ad/adb_10.jpg"></p>
+					<p><img src="ad/adb_10a.jpg"></p>
+					<p><img src="ad/adb_10b.jpg"></p>
+				</div>
+				<div class="smpic">
+					<p class="cur first"><img src="ad/adb_11.jpg"></p>
+					<p><img src="ad/adb_11.jpg"></p>
+					<p><img src="ad/adb_11.jpg"></p>				
+				</div>
+			</div>
+			<script type="text/javascript">
+			$('#ydbMnadTwo div.pic p').soChange({thumbObj:'#ydbMnadTwo div.smpic p',thumbNowClass:'cur',slideTime:500,changeTime:5000,delayTime:100});
+			</script>					
+			<div class="mnad last" id="ydbMnadThree">
+				<div class="pic">
+					<p class="first"><img src="ad/adb_10.jpg"></p>
+					<p><img src="ad/adb_10a.jpg"></p>
+					<p><img src="ad/adb_10b.jpg"></p>
+				</div>
+				<div class="smpic">
+					<p class="cur first"><img src="ad/adb_11.jpg"></p>
+					<p><img src="ad/adb_11.jpg"></p>
+					<p><img src="ad/adb_11.jpg"></p>				
+				</div>
+			</div>
+			<script type="text/javascript">
+			$('#ydbMnadThree div.pic p').soChange({thumbObj:'#ydbMnadThree div.smpic p',thumbNowClass:'cur',slideTime:500,changeTime:5000,delayTime:100});
+			</script>			
+		</div>
+		
+	</div><!--ydb-xdkz-->
+</div>
+
+<div class="yd-pdwid ydb-jspp">
+	<div class="tit">
+		<h4><img src="ad/ydb_tit04.jpg"></h4>
+		<a class="more" href="#">更多品牌</a>
+	</div>
+	<div class="ydb-lepp">
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>	
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+	</div>
+	<div class="ydb-rigad" id="ydbRigad">
+		<div class="bigpic first"><a href="#"><img src="ad/adb_13.jpg"></a></div>
+		<p class="smpic"><img src="ad/adb_12.jpg"></p>
+		<div class="bigpic"><a href="#"><img src="ad/adb_13.jpg"></a></div>		
+		<p class="smpic"><img src="ad/adb_12.jpg"></p>
+		<div class="bigpic"><a href="#"><img src="ad/adb_13.jpg"></a></div>	
+		<p class="smpic"><img src="ad/adb_12.jpg"></p>
+		<div class="bigpic"><a href="#"><img src="ad/adb_13.jpg"></a></div>			
+		<p class="smpic"><img src="ad/adb_12.jpg"></p>
+		<div class="bigpic"><a href="#"><img src="ad/adb_13.jpg"></a></div>			
+		<p class="smpic"><img src="ad/adb_12.jpg"></p>
+	</div>
+	<script type="text/javascript">
+	$('#ydbRigad div.bigpic').soChange({thumbObj:'#ydbRigad p.smpic', slideTime:0,autoChange:false, delayTime:0,thumbOverEvent:false});
+	</script>			
+	
+</div> 
+
+<div class="yd-pdwid">
+	<div class="ydb-lemdadx yd-ad">
+		<a href="#"><img src="ad/adb_14.jpg"></a>
+
+		<a href="#"><img src="ad/adb_15.jpg"></a>
+	</div>
+	<div class="ydb-sycd">
+		<div class="tit">
+			<h2><img src="ad/ydb_tit05.jpg"></h2>
+			<div class="ziad">
+				<a href="#">日用消费品</a>|
+				<a href="#">农副产品</a>|
+				<a href="#">水产品</a>| 
+				<a href="#">土特产品</a>|
+				<a href="#">工艺品</a>|
+				<a href="#">母婴</a>|
+				<a href="#">美容</a>|
+				<a href="#">服饰</a>|
+				<a href="#">户外运动</a>
+
+			</div>
+			<a href="#" class="more">更多&gt;&gt;</a>
+		</div>
+		<div class="main">
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶  20g</a></p>
+				<p class="price">￥1038</p>
+			</div>
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶  20g</a></p>
+				<p class="price">￥1038</p>
+			</div>
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶  20g</a></p>
+				<p class="price">￥1038</p>
+			</div>
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶  20g</a></p>
+				<p class="price">￥1038</p>
+			</div>									
+		</div>
+	</div>
+</div>
+
+<div class="yd-pdwid yd-ad"><img src="ad/adb_16.jpg"></div>
+
+<div class="ydb-mrzb">
+	<h2><img src="ad/ydb_tit06.jpg"></h2>
+	<div class="ydb-tabpd" id="ydbTabpd">
+		<ul>
+			<li class="box first">
+				<strong><a href="#"><img src="ad/ydb_pd04.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">碧欧泉男士水动力洁面啫喱</a></p>
+				<p class="price"><span>145</span>元</p>
+				<p class="scj">市场价：<s>220</s></p>
+			</li>
+			<li class="cur li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">
+				<strong><a href="#"><img src="ad/ydb_pd04.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">碧欧泉男士水动力洁面啫喱</a></p>
+				<p class="price"><span>145</span>元</p>
+				<p class="scj">市场价：<s>220</s></p>
+			</li>	
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">3</li>
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">4</li>			
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">5</li>		
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>					
+		</ul>
+	</div>
+	<script type="text/javascript">
+	$('#ydbTabpd ul li.box').soChange({thumbObj:'#ydbTabpd ul li.li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:0});
+	</script>
+	<div class="ydb-midtab" id="ydbMidtab">
+		<div class="tit">
+			<ul>
+				<li class="first cur">面部</li>
+				<li>身体</li>
+				<li>彩妆</li>
+				<li>面部</li>
+				<li>身体</li>
+				<li>彩妆</li>
+				<li>面部</li>
+				<li>身体</li>
+				<li>其它</li>								
+			</ul>
+		</div>
+		<div class="main first">
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>
+			<div class="product last">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>		
+		</div>
+		<div class="main">2</div>
+		<div class="main">3</div>
+		<div class="main">4</div>
+		<div class="main">5</div>
+		<div class="main">6</div>
+		<div class="main">7</div>
+		<div class="main">8</div>
+		<div class="main">9</div>
+	</div>
+	<div class="ydb-midrad yd-ad"><img src="ad/adb_18.jpg" align="absmiddle"></div>
+</div>
+<script type="text/javascript">
+$('#ydbMidtab div.main').soChange({thumbObj:'#ydbMidtab div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:80});
+</script>
+<div class="ydb-jjjc">
+	<h2><img src="ad/ydb_tit07.jpg"></h2>
+	<div class="ydb-tjpp" id="ydbTjpp">
+		<div class="tit">
+			<ul>
+				<li class="cur">1</li>
+				<li>2</li>
+				<li>3</li>			
+			</ul>
+		</div>
+		<div class="main">
+			<p class="first"><img src="ad/adb_19.jpg"></p>
+			<p><img src="ad/adb_19.jpg"></p>
+			<p><img src="ad/adb_19.jpg"></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$('#ydbTjpp div.main p').soChange({thumbObj:'#ydbTjpp div.tit li',thumbNowClass:'cur',	slideTime:500, changeTime:5000, delayTime:80});
+	</script>		
+	<div class="ydb-hotpd" id="ydbHotpd">
+		<div class="tit">
+			<ul>
+				<li class="cur">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+		<div class="main first">
+			<div class="product">
+					<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">散装茉莉清茶</a></p>	
+					<p class="scj">市场价：￥<s>666</s></p>					
+					<p class="price">￥666</p>
+					<p class="pl">已售：<b>123</b><a href="#">(123人评论)</a></p>										
+			</div>
+			<div class="product">
+					<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">散装茉莉清茶</a></p>	
+					<p class="scj">市场价：￥<s>666</s></p>					
+					<p class="price">￥666</p>
+					<p class="pl">已售：<b>123</b><a href="#">(123人评论)</a></p>										
+			</div>
+			<div class="product">
+					<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">散装茉莉清茶</a></p>	
+					<p class="scj">市场价：￥<s>666</s></p>					
+					<p class="price">￥666</p>
+					<p class="pl">已售：<b>123</b><a href="#">(123人评论)</a></p>										
+			</div>						
+		</div>	
+		<div class="main">2</div>
+		<div class="main">3</div>	
+	</div>
+	<script type="text/javascript">
+	$('#ydbHotpd div.main').soChange({thumbObj:'#ydbHotpd div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false,  delayTime:80});
+	</script>	
+	<div class="ydb-toppd" id="ydbTopPd">
+		<div class="tit">
+			<ul>
+				<li class="cur">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+		<div class="main first">
+				<div class="li"><p class="content"><b class="hong">1</b><a href="#">散装茉莉清茶散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">2</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">3</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>4</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>5</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>6</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>7</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>8</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>																								
+		</div>
+		<div class="main">
+				<div class="li"><p class="content"><b class="hong">1</b><a href="#">散装茉莉清茶散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">2</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>		
+		</div>
+		<div class="main">
+				<div class="li"><p class="content"><b class="hong">1</b><a href="#">散装茉莉清茶散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">2</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>	
+				<div class="li"><p class="content"><b class="hong">3</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>					
+		</div>		
+	</div>
+	<script type="text/javascript">
+	$('#ydbTopPd div.main').soChange({thumbObj:'#ydbTopPd div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:80});
+	</script>		
+</div>
+
+<div class="ydb-ppw">
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_01.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_02.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>		
+		<p><a href="#"><img src="ad/pp_03.jpg"></a></p>
+		<p><a href="#"><img src="ad/pp_04.jpg"></a></p>			
+</div>
+
+
+<div class="ydb-mrzb ydb-fsxb">
+	<h2><img src="ad/ydb_tit08.jpg"></h2>
+	<div class="ydb-tabpd ydb-tabpd02" id="ydbTabpdx">
+		<ul>
+			<li class="box first">
+				<strong><a href="#"><img src="ad/ydb_pd04.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">碧欧泉男士水动力洁面啫喱</a></p>
+				<p class="price"><span>145</span>元</p>
+				<p class="scj">市场价：<s>220</s></p>
+			</li>
+			<li class="cur li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">
+				<strong><a href="#"><img src="ad/ydb_pd04.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">碧欧泉男士水动力洁面啫喱</a></p>
+				<p class="price"><span>145</span>元</p>
+				<p class="scj">市场价：<s>220</s></p>
+			</li>	
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">3</li>				
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">4</li>					
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>
+			<li class="box">5</li>
+			<li class="li"><a href="#">碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱碧欧泉男士水动力洁面啫喱</a></li>					
+		</ul>
+	</div>
+	<script type="text/javascript">
+	$('#ydbTabpdx ul li.box').soChange({thumbObj:'#ydbTabpdx ul li.li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:0});
+	</script>	
+	<div class="ydb-midtab ydb-midtab02" id="ydbMidtabx">
+		<div class="tit">
+			<ul>
+				<li class="first cur">面部</li>
+				<li>身体</li>
+				<li>彩妆</li>
+				<li>面部</li>
+				<li>身体</li>
+				<li>彩妆</li>
+				<li>面部</li>
+				<li>身体</li>
+				<li>其它</li>								
+			</ul>
+		</div>
+		<div class="main first">
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>
+			<div class="product">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>
+			<div class="product last">
+				<strong><a href="#"><img src="ad/ydb_pd01.jpg" align="absmiddle"></a></strong>
+				<p class="name"><a href="#">散装茉莉清茶</a></p>
+				<p class="note">散装茉莉清茶散装茉莉清茶散装茉莉清茶</p>
+				<p class="price">￥<b>1038</b></p>
+			</div>		
+		</div>
+		<div class="main">22</div>
+		<div class="main">33</div>
+		<div class="main">44</div>
+		<div class="main">55</div>
+		<div class="main">66</div>
+		<div class="main">77</div>
+		<div class="main">88</div>
+		<div class="main">99</div>		
+	</div>
+	<div class="ydb-midrad yd-ad"><img src="ad/adb_20.jpg" align="absmiddle"></div>
+</div>
+<script type="text/javascript">
+$('#ydbMidtabx div.main').soChange({thumbObj:'#ydbMidtabx div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:80});
+</script>
+<div class="ydb-jjjc ydb-smjd">
+	<h2><img src="ad/ydb_tit09.jpg"></h2>
+	<div class="ydb-tjpp ydb-tjpp02" id="ydbTjppx">
+		<div class="tit">
+			<ul>
+				<li class="cur">1</li>
+				<li>2</li>
+				<li>3</li>			
+			</ul>
+		</div>
+		<div class="main">
+			<p class="first"><img src="ad/adb_19.jpg"></p>
+			<p><img src="ad/adb_19.jpg"></p>
+			<p><img src="ad/adb_19.jpg"></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$('#ydbTjppx div.main p').soChange({thumbObj:'#ydbTjppx div.tit li',thumbNowClass:'cur',	slideTime:500, changeTime:5000, delayTime:80});
+	</script>		
+	<div class="ydb-hotpd ydb-hotpd02" id="ydbHotpdx">
+		<div class="tit">
+			<ul>
+				<li class="cur">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+		<div class="main first">
+			<div class="product">
+					<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">散装茉莉清茶</a></p>	
+					<p class="scj">市场价：￥<s>666</s></p>					
+					<p class="price">￥666</p>
+					<p class="pl">已售：<b>123</b><a href="#">(123人评论)</a></p>										
+			</div>
+			<div class="product">
+					<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">散装茉莉清茶</a></p>	
+					<p class="scj">市场价：￥<s>666</s></p>					
+					<p class="price">￥666</p>
+					<p class="pl">已售：<b>123</b><a href="#">(123人评论)</a></p>										
+			</div>
+			<div class="product">
+					<strong><a href="#"><img src="ad/ydb_pd03.jpg" align="absmiddle"></a></strong>
+					<p class="name"><a href="#">散装茉莉清茶</a></p>	
+					<p class="scj">市场价：￥<s>666</s></p>					
+					<p class="price">￥666</p>
+					<p class="pl">已售：<b>123</b><a href="#">(123人评论)</a></p>										
+			</div>						
+		</div>	
+		<div class="main">2</div>
+		<div class="main">3</div>	
+	</div>
+	<script type="text/javascript">
+	$('#ydbHotpdx div.main').soChange({thumbObj:'#ydbHotpdx div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false,  delayTime:80});
+	</script>	
+	<div class="ydb-toppd" id="ydbTopPdx">
+		<div class="tit">
+			<ul>
+				<li class="cur">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+		<div class="main first">
+				<div class="li"><p class="content"><b class="hong">1</b><a href="#">散装茉莉清茶散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">2</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">3</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>4</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>5</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>6</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>7</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b>8</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>																								
+		</div>
+		<div class="main">
+				<div class="li"><p class="content"><b class="hong">1</b><a href="#">散装茉莉清茶散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">2</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>		
+		</div>
+		<div class="main">
+				<div class="li"><p class="content"><b class="hong">1</b><a href="#">散装茉莉清茶散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>
+				<div class="li"><p class="content"><b class="hong">2</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>	
+				<div class="li"><p class="content"><b class="hong">3</b><a href="#">散装茉莉清茶</a></p> <p class="jian"><span>1159</span>件</p></div>					
+		</div>		
+	</div>
+	<script type="text/javascript">
+	$('#ydbTopPdx div.main').soChange({thumbObj:'#ydbTopPdx div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false, delayTime:80});
+	</script>		
+</div>
+
+
+<div class="yd-pdwid yd-ad"><img src="ad/adb_16.jpg"></div>
+
+<div class="ydb-spjk">
+	<h2><img src="ad/ydb_tit10.jpg"></h2>
+	<div class="lead yd-ad"><img src="ad/adb_21.jpg"></div>
+	<div class="centerad yd-ad"><img src="ad/adb_22.jpg"></div>	
+	<div class="rigad yd-ad"><img src="ad/adb_23.jpg"></div>		
+	<div class="rigad rigad02 yd-ad"><img src="ad/adb_24.jpg"></div>		
+	<div class="ydb-hotsp" id="ydbHotSp">
+		<div class="tit">
+			<h3><img src="ad/ydb_tit11.jpg"></h3>
+			<ul>
+				<li class="cur">1</li><li>2</li>
+			</ul>
+		</div>	
+		<div class="main first">
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶散装茉莉清茶散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶散装茉莉清茶散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>	
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>	
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>				
+		</div>
+		<div class="main">22</div>
+	</div>
+	<script type="text/javascript">
+	$('#ydbHotSp div.main').soChange({thumbObj:'#ydbHotSp div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false,  delayTime:80});
+	</script>	
+</div>
+
+<div class="ydb-spjk ydb-gyyd">
+	<h2><img src="ad/ydb_tit12.jpg"></h2>
+	<div class="lead yd-ad"><img src="ad/adb_25.jpg"></div>
+	<div class="centerad yd-ad"><img src="ad/adb_26.jpg"></div>	
+	<div class="rigad yd-ad"><img src="ad/adb_27.jpg"></div>		
+	<div class="rigad rigad02 yd-ad"><img src="ad/adb_28.jpg"></div>		
+	<div class="ydb-hotsp ydb-hotsp02" id="ydbHotSpx">
+		<div class="tit">
+			<h3><img src="ad/ydb_tit11.jpg"></h3>
+			<ul>
+				<li class="cur">1</li><li>2</li>
+			</ul>
+		</div>	
+		<div class="main first">
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶散装茉莉清茶散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶散装茉莉清茶散装茉莉清茶</a></p>
+			</div>
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>	
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>	
+			<div class="box">
+				<strong><a href="#"><img src="ad/ydb_pd05.jpg"></a></strong><p><a href="#">散装茉莉清茶</a></p>
+			</div>				
+		</div>
+		<div class="main">22</div>
+	</div>
+	<script type="text/javascript">
+	$('#ydbHotSpx div.main').soChange({thumbObj:'#ydbHotSpx div.tit li',thumbNowClass:'cur',	slideTime:0, autoChange:false,  delayTime:80});
+	</script>	
+</div>
+
+<div class="ydb-hotcity">
+	<div class="link">
+		<a href="#">上海</a>
+		<a href="#">杭州</a>
+
+		<a href="#">北京</a>
+		<a href="#">天津</a>
+		<a href="#">武汉</a>
+		<a href="#">广州</a>
+		<a href="#">宁波</a>
+		<a href="#">嘉兴</a>
+
+		<a href="#">湖州</a>
+		<a href="#">温州</a>
+		<a href="#">厦门</a>
+		<a href="#">深圳</a>
+		<a href="#">兰州</a>
+		<a href="#">汕头</a>
+
+		<a href="#">珠海</a>
+		<a href="#">安庆</a>
+		<a href="#">乌鲁木齐</a>   
+		<a href="#">合肥</a>
+		<a href="#">大连</a>
+		<a href="#">南宁</a>
+
+		<a href="#">三亚</a>	
+	</div>
+</div>
+
+<div class="ydb-bot">
+	<div class="ydb-bothelp">
+		<div class="box box01">
+			<h5><a href="#">购物指南</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>
+
+		<div class="box box02">
+			<h5><a href="#">配送方式</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+
+
+		</div>
+		<div class="box box03">
+			<h5><a href="#">支付方式</a></h5>
+
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+
+			<p>·<a href="#">订单状态</a></p>			
+		</div>		
+		<div class="box box04">
+			<h5><a href="#">售后服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>				
+		<div class="box box05">
+
+			<h5><a href="#">特色服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>	
+	</div>
+	<div class="botad"><a href="#"><img src="ad/adb_29.jpg"></a></div>
+</div>
+<div class="ydb-botlink">
+	<a href="#">合作伙伴</a>|
+	<a href="#">帮助中心</a>|
+	<a href="#">联系我们</a>|
+	<a href="#">网站地图</a>|
+	<a href="#">商家入驻</a>|
+	<a href="#">供应商加盟</a>|
+	<a href="#">加盟易都</a>|
+	<a href="#">导购</a>|
+	<a href="#">网站联盟</a>|
+	<a href="#">官方博客</a>|
+	<a href="#">广告联系</a>
+
+</div>
+<div class="ydb-botmain">
+	建设运营：易都天下科技发展有限公司  版权所有：Copyright 2003-2011,www.ifreecity.com <br>
+	客服热线：400-000-000  客服邮箱：yidu_ifreecity.com<br>
+	经营许可证编号 京ICP证000000号 <br>
+	<img src="ad/adb_30.jpg">
+</div>
+
+<!--右侧商品滚动-->
+<div class="ydb-adprod">
+	<h5>热卖品</h5>
+	<div class="box">
+		<strong><a href="#"><img src="ad/ydb_pd06.jpg"></a></strong>
+		<p><a href="#">时尚格子品T恤</a></p>
+	</div>
+	<div class="box">
+		<strong><a href="#"><img src="ad/ydb_pd06.jpg"></a></strong>
+		<p><a href="#">时尚格子品T恤</a></p>
+	</div>
+	<div class="box">
+		<strong><a href="#"><img src="ad/ydb_pd06.jpg"></a></strong>
+		<p><a href="#">时尚格子品T恤</a></p>
+	</div>
+	<div class="box">
+		<strong><a href="#"><img src="ad/ydb_pd06.jpg"></a></strong>
+		<p><a href="#">时尚格子品T恤</a></p>
+	</div>
+</div>
+
+<div class="ydb-lesorad">
+<a href="#"><img src="ad/adb_31.jpg"></a>
+</div>
+</body>
+</html>

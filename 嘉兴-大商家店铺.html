@@ -1,0 +1,687 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="x-ua-compatible" content="ie=7"/>
+<title>易都</title>
+<link href="css/global.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="css/jxStore.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<link href="css/jquery.jcarousel.css" rel="stylesheet" rev="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.soChange.js"></script>
+<script type="text/javascript" src="js/ScrollPic.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+</head>
+<body class="ydb-bodybg">
+<div class="ydc-top yd-width">
+  <div class="ydc-left">您好，请<a href="#">[登录]</a> <a href="#">[会员注册]</a></div>
+  <div class="ydc-right">
+	<ul>
+		<li class="first"><a href="#">易都天下</a></li>	
+		<li><a href="#">我要买</a></li>
+		<li><a href="#">商家注册</a></li> 
+		<li><a href="#">我的易都</a></li> 
+		<li><a href="#">我的订单</a></li> 
+		<li class="gwc"><a href="#">购物车(0)</a></li>  
+		<li><a href="#">收藏夹</a></li> 
+		<li><a href="#">帮助中心</a></li>  
+		<li class="kf"><a href="#"> 在线客服</a></li>   
+		<li><a href="#">社区</a></li>
+		<li class="tel">热线电话：4008200573</li>
+	</ul>
+  </div>
+</div>
+
+<div class="ydc-nav">
+  <div class="ydc-navmain">
+    <div class="logo"><a href="#"><img src="ad/adb2_01.jpg" /></a></div>
+		<div class="soso">
+			<div class="spfl" id="ydcSerch">
+				<input name="" type="text" class="list" value="商品分类"/><s></s>
+				<div class="openser" id="ydcSerchBox">
+						<a href="javascript:void(0)" rel="nofollow">商品分类一</a>
+						<a href="javascript:void(0)" rel="nofollow">商品分类二</a>	
+						<a href="javascript:void(0)" rel="nofollow">商品分类三</a>											
+				</div>
+			</div>
+			<script type="text/javascript">
+				$("#ydcSerch s").click(function(event){//绑定事件处理
+					 event.stopPropagation();//停止冒泡
+					var offset = $(event.target).offset();//取消事件冒泡
+					$("#ydcSerchBox").show();//动画显示
+				});
+				$(document).click(function(event) { $("#ydcSerchBox").hide() });//单击空白区域隐藏
+				$("#ydcSerchBox a").click(function(event) { $("#ydcSerchBox").hide() });//单击弹出层则自身隐藏
+				$('#ydcSerchBox a').click(function(){
+					$("#ydcSerch").find("input").val($(this).html());
+					$(this).find('#ydcSerchBox').hide();
+				});
+			</script>	
+			<input name="" type="text" class="serch" value="请输入您需要的商品"/>
+			<a href="#" class="serchbtx">搜索</a>
+		</div>
+		<div class="ydc-navbot">
+			<ul>
+				<li><a href="#"><img src="ad/adb2_02.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_03.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_04.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_05.jpg" alt="频道名称" /></a></li>
+				<li><a href="#"><img src="ad/adb2_06.jpg" alt="频道名称" /></a></li>
+			</ul>
+		</div>
+  </div>
+</div>
+
+<div class="ydc-spfl">
+  <div class="ydc-spflmx">
+    <p class="ydc-spfltit">商品公告：</p>
+    <div class="ydc-spfls" id="aebiz_center">
+			<a href="#">80后童年回忆时尚宝宝秀</a>
+			<a href="#">时尚宝宝秀，全场满100减20！</a>
+			<a href="#">新款夏装5折回馈中！</a>
+			<a href="#">全球限量疯抢，六位设计师精彩演绎</a>
+			<a href="#">忆童年囧事，磊奖等你拿</a>
+			<a href="#">80后童年回忆时尚宝宝秀</a>
+			<a href="#">时尚宝宝秀，全场满100减20！</a>
+			<a href="#">新款夏装5折回馈中！</a>
+			<a href="#">全球限量疯抢，六位设计师精彩演绎</a>
+			<a href="#">忆童年囧事，磊奖等你拿</a>
+		</div>
+  	<p class="ydc-spflja" id="aebiz_right"></p>  
+  </div>
+</div>
+<script type="text/javascript" language="javascript">
+    var aebiz = new ScrollPic();
+    aebiz.scrollContId = "aebiz_center"; //内容容器ID
+    aebiz.arrLeftId = "aebiz_left";//左箭头ID
+    aebiz.arrRightId = "aebiz_right"; //右箭头ID
+    aebiz.listEvent = "onmouseover"; //切换事件
+    aebiz.frameWidth = 860;//显示框宽度
+    aebiz.pageWidth = 172; //翻页宽度
+    aebiz.speed = 30; //移动速度(单位毫秒，越小越快)
+    aebiz.space = 10; //每次移动像素(单位px，越大越快)
+    aebiz.autoPlay = true; //自动播放
+    aebiz.upright = false; //垂直滚动
+    aebiz.autoPlayTime = 4; //自动播放间隔时间(秒)
+    aebiz.initialize(); //初始化
+</script>
+
+<div class="yd-width" style="margin-top:-10px;"><img src="ad/adz.jpg"/></div>
+<div class="ydf-top">
+	<div class="yd-width">
+		<div class="ydf-toplink">
+			<div class="ydf-list">
+				<h2>商品分类</h2>
+				<div class="ydf-listmain" id="ydfList">
+						<div class="li">
+							<h3 class="bg01"><a href="#" class="xx">女装</a></h3><s></s>
+							<div class="listbox">
+								<h4><a href="#">凉鞋1</a></h4>
+								<div class="box">
+									<a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a>								
+								</div>
+								<h4><a href="#">凉鞋</a></h4>
+								<div class="box">
+									<a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a>								
+								</div>
+								<h4><a href="#">凉鞋</a></h4>
+								<div class="box">
+									<a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a>								
+								</div>																
+							</div>
+						</div>
+						<div class="li">
+							<h3 class="bg02"><a href="#" class="xx">男装</a></h3><s></s>
+							<div class="listbox">
+								<h4><a href="#">凉鞋2</a></h4>
+								<div class="box">
+									<a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a>								
+								</div>
+								<h4><a href="#">凉鞋</a></h4>
+								<div class="box">
+									<a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a><a href="#">罗马鞋</a><a href="#">鱼嘴鞋</a>								
+								</div>								
+							</div>
+						</div>
+						<div class="li"><h3 class="bg03"><a href="#" class="xx">女鞋</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>	
+						<div class="li"><h3 class="bg04"><a href="#" class="xx">男鞋</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>
+						<div class="li"><h3 class="bg05"><a href="#" class="xx">数码</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>		
+						<div class="li"><h3 class="bg06"><a href="#" class="xx">家电</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>					
+						<div class="li"><h3 class="bg07"><a href="#" class="xx">运动户外</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>			
+						<div class="li"><h3 class="bg08"><a href="#" class="xx">包包</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>
+						<div class="li"><h3 class="bg09"><a href="#" class="xx">服饰配件</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>
+						<div class="li"><h3 class="bg10"><a href="#" class="xx">美容护肤</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>
+						<div class="li"><h3 class="bg11"><a href="#" class="xx">母婴</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>	
+						<div class="li"><h3 class="bg12"><a href="#" class="xx">内衣</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>				
+						<div class="li"><h3 class="bg13"><a href="#" class="xx">家居</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>
+						<div class="li"><h3 class="bg14"><a href="#" class="xx">图书</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>
+						<div class="li"><h3 class="bg15"><a href="#" class="xx">食品</a></h3><s></s><div class="listbox"><span class="nolist">暂无子分类</span></div></div>				
+				</div>		
+			</div><!--ydf-list-->
+			<script type="text/javascript">
+				$(document).ready(function(){
+					var objStr = "#ydfList div.li";
+					$(objStr).each(function(i){
+						$(this).mouseover(function(){
+							$($("#ydfList div.listbox")[i]).show();
+							$($(objStr)[i]).addClass("cur");		
+						});
+						$(this).hover(function(){},function(){
+							$($("#ydfList div.listbox")[i]).hide();
+							$($(objStr)[i]).removeClass("cur");
+						});	
+					});
+				});
+			</script>			
+			<div class="ydf-path">
+				<a href="#"><b>首页</b></a>&gt;  <a href="#">店铺</a>&gt;  <span>嘉兴涩女郎服装专卖店</span>			
+			</div>
+			<div class="ydf-pathlink">
+				<a href="#">安全购物指南</a>| <a href="#">举报此商品</a>| <a href="#">举报低谷商品有奖！</a>|  <a href="#">消费者维权中心</a>
+			</div>		
+		</div><!--ydf-toplink-->
+		<div class="ydf-nav">
+			<a href="#"><img src="images/ydf-nav01.jpg" alt="频道名称" /></a>
+			<a href="#"><img src="images/ydf-nav02.jpg" alt="频道名称" /></a>
+			<a href="#"><img src="images/ydf-nav03.jpg" alt="频道名称" /></a>
+			<a href="#"><img src="images/ydf-nav04.jpg" alt="频道名称" /></a>
+			<a href="#"><img src="images/ydf-nav05.jpg" alt="频道名称" /></a>			
+		</div>		
+	</div>
+</div>
+
+<div class="yd-width">
+	<div class="ydf-left" >
+		<div class="ydf-bigadx" id="ydfBotad">	
+			<div class="ydf-bigad ydf-bdfirst">
+				<div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div>
+				<p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p>
+			</div>
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>	
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>	
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>	
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>	
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>		
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>		
+			<div class="ydf-bigad"><div class="yd-ad"><a href="#"><img src="ad/ydf-ad01.jpg"/></a></div><p class="first"><a href="#"><img src="ad/ydf-ad02.jpg"/></a></p></div>														
+			<div class="bottab">
+				<span class="cur">凉鞋</span>
+				<span>雪纺裙</span>
+				<span>包包</span>
+				<span>配饰</span>
+				<span>面膜</span>
+				<span>图书精选</span>
+				<span>零食</span>
+				<span>帐篷</span>
+				<span>户外</span>
+			</div>
+		</div><!--ydf-bigadx-->
+		<script type="text/javascript">
+		$('#ydfBotad .ydf-bigad').soChange({thumbObj:'#ydfBotad div.bottab span',thumbNowClass:'cur',	slideTime:0,changeTime:5000,delayTime:300});
+		</script>
+		
+		<div class="ydf-zksm">
+			<div class="tit">
+				<h2><img src="images/ydf-tit01.jpg"/></h2>
+			</div>
+			<div class="ydf-mainadx">
+				<div class="leftad"><img src="ad/adx02.jpg"/></div>
+				<div class="ydf-rigpd">
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>	
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>
+					<div class="product">
+						<strong><a href="#"><img src="ad/ad2_36.jpg"/></a></strong>
+						<p class="name"><a href="#">高档男士头层皮人字拖鞋</a></p>
+						<p class="price">折扣价：<b>￥128</b></p>
+					</div>											
+				</div>
+			</div>	
+		</div><!--ydf-zksm-->	
+	
+		<div class="yaf-ad"><img src="ad/ydf-ad05.jpg"/></div>	
+
+		<div class="ydf-newpd">
+			<div class="leftad yd-ad"><img src="ad/ydf-ad06.jpg"/></div>
+			<div class="rigad">
+				<div class="top yd-ad"><img src="ad/ydf-ad07.jpg"/></div>
+				<div class="bot yd-ad"><img src="ad/ydf-ad08.jpg"/></div>
+			</div>
+		</div><!--ydf-newpd-->
+		
+		<div class="dyf-mpcp">
+			<div class="topbg"></div>
+			<div class="dyf-mpmain">
+				<div class="dyf-mplist">
+					<h2><img src="images/ydf-tit03.jpg"/></h2>
+					<div class="ad"><img src="ad/adxx03.jpg"/></div>
+				</div>
+				
+				<div class="dyf-mprig">
+					<div class="topad">
+					  <div class="product product01">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle" /> </a></strong>
+							<p class="name"><a href="#">多个品牌液晶</a></p>
+							<p class="ss">原价：￥139</p>
+							<p class="price">折扣价：<b>￥<span>111</span></b></p>
+						</div>
+						<div class="product">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+							<p class="name"><a href="#">多个品牌液晶</a></p>
+							<p class="ss">原价：￥139</p>
+							<p class="price">折扣价：￥111</p>
+						</div>					
+					</div>
+					<div class="dyf-mpprod">
+						<div class="product">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+							<p class="name"><a href="#">多个品牌液晶电视随你挑</a></p>
+							<p class="price">139元</p>
+						</div>
+						<div class="product">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/></a></strong>
+							<p class="name"><a href="#">多个品牌液晶电视随你挑</a></p>
+							<p class="price">139元</p>
+						</div>
+						<div class="product">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/></a></strong>
+							<p class="name"><a href="#">多个品牌液晶电视随你挑</a></p>
+							<p class="price">139元</p>
+						</div>
+						<div class="product">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/></a></strong>
+							<p class="name"><a href="#">多个品牌液晶电视随你挑</a></p>
+							<p class="price">139元</p>
+						</div>					
+					</div>
+				</div>			
+			</div>							
+			<div class="botbg"></div>		
+		</div><!--dyf-mpcp-->			
+			
+	</div><!--ydf-left-->
+	
+	<div class="ydf-right">
+		<div class="ydd-info ydf-info">
+				<div class="tit"><h2><b>商家信息</b></h2></div>
+				<div class="main">				
+					<dl><dt>商家昵称：</dt><dd>嘉兴涩女郎服装专卖店嘉兴涩女郎服装专卖店嘉兴涩女郎服装专卖店</dd></dl>
+					<dl><dt>店铺类型：</dt><dd>专卖店</dd></dl>
+					<dl><dt>保&nbsp;证&nbsp;金：</dt><dd>捌佰元整</dd></dl>
+					<dl><dt>经营范围：</dt><dd>服装/配饰类</dd></dl>
+					<dl><dt>注册地址：</dt><dd>浙江省嘉兴市迎宾大道58号</dd></dl>
+					<dl><dt>权&nbsp;利&nbsp;人：</dt><dd>妙玲</dd></dl>
+					<dl><dt>有效期至：</dt><dd>2012年7月11日</dd></dl>
+					<dl><dt>年检记录：</dt><dd>年检合格</dd></dl>
+					<dl><dt>信誉评价：</dt><dd><img src="images/ydd-xin.gif"/><img src="images/ydd-xin.gif"/><img src="images/ydd-xin.gif"/></dd></dl>	
+					<div class="bot">
+						<a href="#" class="sc">收藏本店铺</a>
+						<a href="#" class="jr">进入店铺</a>
+					</div>			
+				</div>
+			</div><!--ydd-info-->	
+			
+			<div class="ydd-map ydf-map">
+				<div class="tit"><h2>商家地图</h2></div>
+				<div class="main"><img src="ad/ydd-ad2.jpg"/></div>
+			</div>				
+			
+			<div class="ydd-kf ydf-kf">
+				<div class="tit"></div>		
+				<div class="mainx">
+					<div class="main">
+						<dl><dt>营业时间：</dt><dd><b>9：00-24：00</b></dd></dl>
+						<dl><dt>营业状态：</dt><dd>正在营业</dd></dl>			
+					</div>
+					<div class="main">
+						<dl><dt>在线客服：</dt><dd><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a> <a href="#"><img src="images/ydd-qq.gif"/>婷婷</a><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a></dd></dl>
+					</div>
+					<div class="main">					
+						<dl><dt>售后客服：</dt><dd><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a></dd></dl>			
+					</div>
+					<div class="main bot">
+						<dl><dt>投诉客服：</dt><dd><a href="#"><img src="images/ydd-qq.gif"/>婷婷</a></dd></dl>
+					</div>
+				</div>			
+			</div><!--ydd-kf-->	
+			
+			<div class="ydd-serch ydf-serchx">
+				<div class="tit"><h2>店内搜索</h2><s></s></div>
+				<div class="ser"><input name="" type="text" value="请输入关键字"><a href="#">搜索</a></div>
+				<div class="bot">热门：<a href="#">吊带</a> <a href="#">连衣裙</a> <a href="#">T恤</a> <a href="#">人字拖</a></div>
+			</div>			
+		
+			<div class="ydf-cxhd">
+			 <div class="ydf-cxhdtit"><img src="images/ydf-01.gif"></div>
+			 <div class="ydf-cxhdtam" id="ydfCxhdtam">
+					<div class="ydf-cxhdleft ydf-cxhdifirst">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg"align="absmiddle"/>  </a>  </strong>
+							<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖</a></p>
+							<p class="price">原价：￥255元</p>
+							<p class="sout">特价：<b>￥128</b></p>
+					</div>
+					<div class="ydf-cxhdleft">
+							<strong><a href="#"><img src="ad/ad2_36.jpg"align="absmiddle"/>  </a>  </strong>
+							<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖</a></p>
+							<p class="price">原价：￥255元</p>
+							<p class="sout">特价：<b>￥128</b></p>
+					</div>
+					<div class="ydf-cxhdleft">
+							<strong><a href="#"><img src="ad/ydf-ad10.jpg"align="absmiddle"/>  </a>  </strong>
+							<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖</a></p>
+							<p class="price">原价：￥255元</p>
+							<p class="sout">特价：<b>￥128</b></p>
+					</div>			
+					<div class="ydf-cxhdright">
+						 <p class="smpic"><img src="images/ydf-02.gif" align="absmiddle"></p>
+						 <p class="smpic"><img src="images/ydf-02.gif" align="absmiddle"></p>
+						 <p class="smpic"><img src="images/ydf-02.gif" align="absmiddle"></p>
+					</div>				
+			 </div>
+			</div>
+			<script type="text/javascript">
+			$('#ydfCxhdtam .ydf-cxhdleft').soChange({thumbObj:'#ydfCxhdtam div.ydf-cxhdright p.smpic',	slideTime:0,changeTime:5000,autoChange:false, delayTime:300 });
+			</script> 
+			
+			<div class="ydf-hotph">
+				<div class="tit"><h2><img src="images/ydf-tit05.jpg"/></h2><a href="#" class="more">更多&gt;&gt;</a></div>		
+				<div class="main">
+					<div class="product">
+						<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+						<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+						<p class="price">￥<span>119.00元</span></p>
+						<p class="sout">已售出<b>123123</b>笔</p>
+					</div>	
+					<div class="product">
+						<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+						<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+						<p class="price">￥<span>119.00元</span></p>
+						<p class="sout">已售出<b>123123</b>笔</p>
+					</div>	
+					<div class="product">
+						<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+						<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+						<p class="price">￥<span>119.00元</span></p>
+						<p class="sout">已售出<b>123123</b>笔</p>
+					</div>
+					<div class="product">
+						<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+						<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+						<p class="price">￥<span>119.00元</span></p>
+						<p class="sout">已售出<b>123123</b>笔</p>
+					</div>	
+					<div class="product">
+						<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+						<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+						<p class="price">￥<span>119.00元</span></p>
+						<p class="sout">已售出<b>123123</b>笔</p>
+					</div>					
+					<div class="product last">
+						<strong><a href="#"><img src="ad/ydd-ad3.jpg" alt="商品名称" /></a></strong>
+						<p class="name"><a href="#">冰丝糖果色七分打底裤冰丝糖果色七分打底裤</a></p>
+						<p class="price">￥<span>119.00元</span></p>
+						<p class="sout">已售出<b>123123</b>笔</p>
+					</div>		
+				</div>		
+			</div><!--ydf-hotph-->	
+	</div><!--ydf-right-->	
+</div>
+<div style="clear:both"></div>
+<div class="yd-pdwid">
+  <div class="yd-pdwidleft">
+    <div class="yd-pdletit"><img src="images/ydf-03.gif"></div>
+	<div class="yd-pdlemain">
+	    <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle" /> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶多个品牌液晶多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle" /> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product ">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle" /> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product ">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		<div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		<div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>	
+	</div>
+  </div>
+  <div class="yd-pdwidright">
+    <div class="yd-pdritit"><img src="images/ydf-04.gif"></div>
+	<div class="yd-pdrimain">
+	  <div class="yd-pdri01"></div>
+	     <div class="yd-pdrimid">
+          <div class="product ">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle" /> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product ">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		<div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		<div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>   
+	    </div>	
+	  <div class="yd-pdri02"></div>	
+	</div>
+  </div>
+</div>
+<div class="yd-bbdp">
+   <div class="yd-bbdptit"><img src="images/ydf-08.gif"></div>
+   <div class="yd-bbdpmain">
+   		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle" /> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product ">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle" /> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product ">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		 <div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		<div class="product">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>
+		<div class="product product01">
+		  <strong><a href="#"><img src="ad/ydf-ad10.jpg" align="absmiddle"/> </a></strong>
+		  <p class="name"><a href="#">多个品牌液晶</a></p>
+		  <p class="ss">原价：￥139</p>
+		  <p class="price">折扣价：<b>￥111</b></p>
+		</div>	
+   
+   </div>
+
+</div>
+
+
+<div class="ydb-bot">
+	<div class="ydb-bothelp">
+		<div class="box box01">
+			<h5><a href="#">购物指南</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>
+
+		<div class="box box02">
+			<h5><a href="#">配送方式</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>
+		<div class="box box03">
+			<h5><a href="#">支付方式</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>		
+		<div class="box box04">
+			<h5><a href="#">售后服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>				
+		<div class="box box05">
+
+			<h5><a href="#">特色服务</a></h5>
+			<p>·<a href="#">购物流程购物指南购物指南购物指南</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>
+			<p>·<a href="#">购物流程</a></p>
+			<p>·<a href="#">订单状态</a></p>			
+		</div>	
+	</div>
+	<div class="botad"><a href="#"><img src="ad/adb_29.jpg"></a></div>
+</div>
+<div class="ydb-botlink">
+	<a href="#">合作伙伴</a>|
+	<a href="#">帮助中心</a>|
+	<a href="#">联系我们</a>|
+	<a href="#">网站地图</a>|
+	<a href="#">商家入驻</a>|
+	<a href="#">供应商加盟</a>|
+	<a href="#">加盟易都</a>|
+	<a href="#">导购</a>|
+	<a href="#">网站联盟</a>|
+	<a href="#">官方博客</a>|
+	<a href="#">广告联系</a>
+</div>
+<div class="ydb-botmain">
+	建设运营：易都天下科技发展有限公司  版权所有：Copyright 2003-2011,www.ifreecity.com <br>
+	客服热线：400-000-000  客服邮箱：yidu_ifreecity.com<br>
+	经营许可证编号 京ICP证000000号 <br>
+	<img src="ad/adb_30.jpg">
+</div>
+</body>
+</html>
